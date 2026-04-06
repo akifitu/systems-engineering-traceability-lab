@@ -8,6 +8,12 @@ from typing import Sequence
 
 from .audit import audit_artifacts
 from .data import load_artifacts
+from .roadmap import (
+    build_portfolio_summary,
+    export_portfolio_roadmap,
+    filter_projects,
+    load_portfolio_projects,
+)
 from .reporting import export_reports
 
 
@@ -22,6 +28,24 @@ def build_parser() -> argparse.ArgumentParser:
     audit_parser = subparsers.add_parser("audit", help="Validate engineering artifacts and optionally export reports.")
     audit_parser.add_argument("--data-dir", default="data", help="Directory containing JSON artifact files.")
     audit_parser.add_argument("--export-dir", help="Directory where reports should be written.")
+
+    roadmap_parser = subparsers.add_parser(
+        "roadmap",
+        help="Render the multi-project portfolio roadmap and todo checklist.",
+    )
+    roadmap_parser.add_argument(
+        "--projects-file",
+        default="data/portfolio_projects.json",
+        help="JSON file containing the portfolio roadmap source data.",
+    )
+    roadmap_parser.add_argument(
+        "--project",
+        help="Optional project slug to render only one roadmap entry.",
+    )
+    roadmap_parser.add_argument(
+        "--export-path",
+        help="Optional Markdown file path where the roadmap should be written.",
+    )
     return parser
 
 
@@ -38,6 +62,17 @@ def run(argv: Sequence[str] | None = None) -> int:
             export_reports(result, Path(args.export_dir))
             print(f"Reports exported to: {args.export_dir}")
         return 1 if result.errors else 0
+
+    if args.command == "roadmap":
+        projects = filter_projects(load_portfolio_projects(Path(args.projects_file)), args.project)
+        if not projects:
+            print(f"No portfolio project found for slug: {args.project}")
+            return 1
+        _print_roadmap_summary(projects)
+        if args.export_path:
+            export_portfolio_roadmap(projects, Path(args.export_path))
+            print(f"Roadmap exported to: {args.export_path}")
+        return 0
 
     parser.error("Unknown command.")
     return 2
@@ -67,6 +102,15 @@ def _print_summary(result) -> None:
         print("Validation warnings:")
         for message in result.warnings:
             print(f"  - {message}")
+
+
+def _print_roadmap_summary(projects) -> None:
+    summary = build_portfolio_summary(projects)
+    print("Roadmap summary")
+    print(f"  Projects: {summary['project_count']}")
+    print(f"  Built: {summary['built_count']}")
+    print(f"  Planned: {summary['planned_count']}")
+    print(f"  Next suggested project: {summary['next_project']}")
 
 
 if __name__ == "__main__":

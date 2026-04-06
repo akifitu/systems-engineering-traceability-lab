@@ -1,0 +1,489 @@
+[
+  {
+    "id": "PORT-001",
+    "slug": "traceability-lab",
+    "title": "Requirements Traceability Lab",
+    "repo_name": "systems-engineering-traceability-lab",
+    "status": "built",
+    "build_order": 1,
+    "duration_weeks": "1-2",
+    "goal": "Turn requirements, interfaces, tests, and risks into structured engineering data with automated validation and exportable reports.",
+    "skills": [
+      "requirements engineering",
+      "verification planning",
+      "interface management",
+      "Python automation"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "GitHub Actions"
+    ],
+    "phases": [
+      {
+        "name": "Define the case study",
+        "steps": [
+          "Choose a realistic mission with multiple subsystems and visible system interactions.",
+          "Write stakeholder-level needs and derive engineering requirements.",
+          "Allocate subsystem responsibilities and define a stable ID scheme."
+        ]
+      },
+      {
+        "name": "Structure the engineering data",
+        "steps": [
+          "Store stakeholder, system, and subsystem requirements in machine-readable files.",
+          "Add components, interfaces, verification cases, and a risk register.",
+          "Make parent-child traces explicit so audits can be automated."
+        ]
+      },
+      {
+        "name": "Build the automation",
+        "steps": [
+          "Implement artifact loaders and an audit engine.",
+          "Validate traceability, verification linkage, interface consistency, and risk data.",
+          "Export reviewer-facing Markdown and CSV reports."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add regression tests for the clean dataset.",
+          "Inject negative cases such as broken interfaces and missing links.",
+          "Fix validation logic until the repository audits cleanly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write an English README, add licensing, and organize the docs folder.",
+          "Commit generated reports so reviewers can inspect outputs immediately.",
+          "Push the repo publicly and keep CI green."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Select a mission scenario with at least five subsystems", "status": "done" },
+      { "task": "Model stakeholder, system, and subsystem requirements", "status": "done" },
+      { "task": "Define components, interfaces, verification tests, and risks", "status": "done" },
+      { "task": "Implement the audit CLI and report exporter", "status": "done" },
+      { "task": "Add unit tests and negative validation tests", "status": "done" },
+      { "task": "Generate audit reports into the reports folder", "status": "done" },
+      { "task": "Set up GitHub Actions CI", "status": "done" },
+      { "task": "Publish and maintain the public repository", "status": "done" }
+    ],
+    "deliverables": [
+      "Structured engineering dataset",
+      "Audit CLI",
+      "Traceability and interface reports",
+      "Automated tests and CI",
+      "Recruiter-friendly README"
+    ]
+  },
+  {
+    "id": "PORT-002",
+    "slug": "satellite-power-budget-simulator",
+    "title": "Satellite Power Budget Simulator",
+    "repo_name": "satellite-power-budget-simulator",
+    "status": "planned",
+    "build_order": 6,
+    "duration_weeks": "2-3",
+    "goal": "Simulate solar generation, eclipse losses, battery usage, and subsystem loads across orbital mission phases.",
+    "skills": [
+      "mission analysis",
+      "energy budgeting",
+      "scenario modeling",
+      "engineering visualization"
+    ],
+    "recommended_stack": [
+      "Python",
+      "CSV",
+      "Matplotlib",
+      "Jupyter"
+    ],
+    "phases": [
+      {
+        "name": "Define the mission assumptions",
+        "steps": [
+          "Select a cubesat or microsat mission concept and target orbit.",
+          "List subsystem load cases for sunlight, eclipse, safe mode, and payload mode.",
+          "Document battery, solar array, and depth-of-discharge assumptions."
+        ]
+      },
+      {
+        "name": "Build the data model",
+        "steps": [
+          "Create machine-readable scenario inputs for orbital periods and subsystem duty cycles.",
+          "Define reusable configuration files for power generation and consumption.",
+          "Capture nominal and worst-case scenarios."
+        ]
+      },
+      {
+        "name": "Implement the simulator",
+        "steps": [
+          "Calculate orbital energy balance across mission segments.",
+          "Simulate state-of-charge evolution over multiple orbits.",
+          "Export plots and CSV tables for each mission scenario."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Cross-check sample scenarios against hand calculations.",
+          "Test edge cases such as prolonged eclipse or payload overuse.",
+          "Refine model assumptions when margins look unrealistic."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write a clear assumptions section and scenario guide.",
+          "Include comparison charts and an example mission run.",
+          "Push the repo with generated figures and validation notes."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Choose a reference satellite mission and orbit", "status": "planned" },
+      { "task": "Create sunlight and eclipse load-case assumptions", "status": "planned" },
+      { "task": "Model solar array and battery parameters", "status": "planned" },
+      { "task": "Implement orbit-by-orbit energy balance simulation", "status": "planned" },
+      { "task": "Add plots for state of charge and power margins", "status": "planned" },
+      { "task": "Validate the model against hand calculations", "status": "planned" },
+      { "task": "Write a technical README and scenario guide", "status": "planned" },
+      { "task": "Publish example results and push the repo", "status": "planned" }
+    ],
+    "deliverables": [
+      "Configurable mission power model",
+      "Scenario input files",
+      "Power margin plots",
+      "Validation notebook or report",
+      "Public case-study repository"
+    ]
+  },
+  {
+    "id": "PORT-003",
+    "slug": "interface-control-toolkit",
+    "title": "Interface Control Toolkit",
+    "repo_name": "interface-control-toolkit",
+    "status": "planned",
+    "build_order": 3,
+    "duration_weeks": "1-2",
+    "goal": "Model subsystem interfaces, validate producer-consumer compatibility, and export interface control documentation.",
+    "skills": [
+      "interface management",
+      "integration engineering",
+      "configuration control",
+      "automation"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "Markdown",
+      "CSV"
+    ],
+    "phases": [
+      {
+        "name": "Define the integration context",
+        "steps": [
+          "Pick a system with at least four interacting subsystems.",
+          "List critical interfaces, protocols, data items, and timing constraints.",
+          "Set naming rules for signals, interface IDs, and ownership."
+        ]
+      },
+      {
+        "name": "Build the interface schema",
+        "steps": [
+          "Store components and their provided and required signals in machine-readable files.",
+          "Model each interface with source, target, protocol, payload, units, and update rate.",
+          "Capture versioning or compatibility metadata."
+        ]
+      },
+      {
+        "name": "Implement the toolkit",
+        "steps": [
+          "Validate that every source produces the declared signal.",
+          "Validate that every target consumes the declared signal.",
+          "Export an interface register and an ICD-style summary document."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Create broken sample interfaces to prove the validator catches errors.",
+          "Test naming mismatches, missing units, and duplicate identifiers.",
+          "Fix schema gaps that make reviews harder."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Add diagrams or tables that explain the integration context.",
+          "Document how a reviewer adds a new interface.",
+          "Publish example exports and push the repo."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Choose the reference system and subsystem set", "status": "planned" },
+      { "task": "Define an interface schema with timing and units", "status": "planned" },
+      { "task": "Implement producer-consumer validation", "status": "planned" },
+      { "task": "Generate interface register and ICD exports", "status": "planned" },
+      { "task": "Add negative tests for mismatched interfaces", "status": "planned" },
+      { "task": "Write onboarding documentation for new interfaces", "status": "planned" },
+      { "task": "Create a sample dataset and diagrams", "status": "planned" },
+      { "task": "Publish and push the repository", "status": "planned" }
+    ],
+    "deliverables": [
+      "Interface schema and sample dataset",
+      "Compatibility validator",
+      "ICD-style export",
+      "Negative test suite",
+      "Integration-focused README"
+    ]
+  },
+  {
+    "id": "PORT-004",
+    "slug": "verification-readiness-dashboard",
+    "title": "Verification Readiness Dashboard",
+    "repo_name": "verification-readiness-dashboard",
+    "status": "planned",
+    "build_order": 2,
+    "duration_weeks": "2-3",
+    "goal": "Track requirement verification status, evidence, owners, and closure risk in a reviewer-friendly dashboard.",
+    "skills": [
+      "verification and validation",
+      "status accounting",
+      "evidence management",
+      "dashboard reporting"
+    ],
+    "recommended_stack": [
+      "Python",
+      "CSV",
+      "HTML",
+      "GitHub Pages"
+    ],
+    "phases": [
+      {
+        "name": "Define the verification model",
+        "steps": [
+          "Define requirement, verification case, owner, due date, and evidence fields.",
+          "Decide which status states matter, such as planned, in-work, blocked, and closed.",
+          "Choose metrics such as closure percentage and open critical items."
+        ]
+      },
+      {
+        "name": "Build the source datasets",
+        "steps": [
+          "Create machine-readable requirement and verification records.",
+          "Link evidence files or references to each verification case.",
+          "Capture subsystem ownership and review status."
+        ]
+      },
+      {
+        "name": "Implement the dashboard",
+        "steps": [
+          "Compute readiness metrics by subsystem and verification method.",
+          "Render a static HTML dashboard or exportable summary tables.",
+          "Highlight blocked or overdue verification items."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Test missing evidence, duplicated cases, and inconsistent statuses.",
+          "Verify that dashboard totals match the source data.",
+          "Refine the display so a reviewer can understand status quickly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Add screenshots and a sample readiness review pack.",
+          "Document how to add new requirements and evidence.",
+          "Push the repo and optionally deploy GitHub Pages."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Design the verification status data model", "status": "planned" },
+      { "task": "Create requirement-to-evidence sample data", "status": "planned" },
+      { "task": "Implement subsystem and method readiness metrics", "status": "planned" },
+      { "task": "Render a static dashboard or HTML report", "status": "planned" },
+      { "task": "Add tests for missing or inconsistent evidence", "status": "planned" },
+      { "task": "Prepare screenshots for the README", "status": "planned" },
+      { "task": "Document update workflow for new verification cases", "status": "planned" },
+      { "task": "Publish and push the repository", "status": "planned" }
+    ],
+    "deliverables": [
+      "Verification tracking dataset",
+      "Readiness metrics engine",
+      "Static dashboard export",
+      "Evidence review examples",
+      "Public repository or GitHub Pages deployment"
+    ]
+  },
+  {
+    "id": "PORT-005",
+    "slug": "trade-study-engine",
+    "title": "Trade Study Engine",
+    "repo_name": "trade-study-engine",
+    "status": "planned",
+    "build_order": 4,
+    "duration_weeks": "2-3",
+    "goal": "Compare architecture options against weighted decision criteria and make trade study logic reproducible.",
+    "skills": [
+      "trade studies",
+      "decision analysis",
+      "architecture evaluation",
+      "sensitivity analysis"
+    ],
+    "recommended_stack": [
+      "Python",
+      "CSV",
+      "Markdown",
+      "Plots"
+    ],
+    "phases": [
+      {
+        "name": "Define the decision problem",
+        "steps": [
+          "Choose an architecture decision such as propulsion, communications, or sensing options.",
+          "Define the candidate concepts and evaluation criteria.",
+          "Assign rationale and initial weights for each criterion."
+        ]
+      },
+      {
+        "name": "Build the scoring data",
+        "steps": [
+          "Create machine-readable alternatives, scores, assumptions, and references.",
+          "Separate raw technical data from weighted decision logic.",
+          "Capture uncertainty bounds or confidence notes."
+        ]
+      },
+      {
+        "name": "Implement the engine",
+        "steps": [
+          "Calculate weighted scores and rank alternatives.",
+          "Generate tables and charts that explain why the preferred option wins.",
+          "Support quick what-if analysis by changing weights."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Test that weights sum correctly and rankings update as expected.",
+          "Validate edge cases such as tied scores or missing inputs.",
+          "Check that published conclusions match the underlying math."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write a decision narrative around the trade study.",
+          "Include sensitivity results and assumptions in the README.",
+          "Push the repo with example scenarios and outputs."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Choose a concrete architecture decision to analyze", "status": "planned" },
+      { "task": "Define alternatives and weighted criteria", "status": "planned" },
+      { "task": "Store scoring inputs in structured files", "status": "planned" },
+      { "task": "Implement weighted ranking and what-if analysis", "status": "planned" },
+      { "task": "Generate comparison tables and charts", "status": "planned" },
+      { "task": "Test score normalization and ranking changes", "status": "planned" },
+      { "task": "Write a technical decision narrative", "status": "planned" },
+      { "task": "Publish and push the repository", "status": "planned" }
+    ],
+    "deliverables": [
+      "Trade study dataset",
+      "Weighted scoring engine",
+      "Sensitivity analysis outputs",
+      "Decision summary report",
+      "Public architecture-selection repository"
+    ]
+  },
+  {
+    "id": "PORT-006",
+    "slug": "fmea-reliability-workbench",
+    "title": "FMEA and Reliability Workbench",
+    "repo_name": "fmea-reliability-workbench",
+    "status": "planned",
+    "build_order": 5,
+    "duration_weeks": "2-3",
+    "goal": "Connect failure modes, causes, effects, controls, and residual risk into a structured engineering analysis workspace.",
+    "skills": [
+      "reliability engineering",
+      "hazard analysis",
+      "risk reduction",
+      "mitigation tracking"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "Markdown"
+    ],
+    "phases": [
+      {
+        "name": "Define the reliability scope",
+        "steps": [
+          "Pick a subsystem or mission concept with meaningful failure modes.",
+          "Define severity, occurrence, and detection scales.",
+          "Choose how mitigations and controls will be recorded."
+        ]
+      },
+      {
+        "name": "Build the analysis dataset",
+        "steps": [
+          "Create structured records for functions, failure modes, causes, and effects.",
+          "Link mitigations, controls, and residual risks to each failure mode.",
+          "Add subsystem ownership and review status."
+        ]
+      },
+      {
+        "name": "Implement the workbench",
+        "steps": [
+          "Calculate risk priority values and highlight the highest-risk items.",
+          "Generate sortable tables or Markdown reports for review boards.",
+          "Trace mitigations back to affected functions or requirements."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Test invalid scale values, duplicate failure modes, and missing mitigations.",
+          "Verify that risk priority calculations match the documented method.",
+          "Review whether mitigations actually reduce the residual score."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Document the scoring model and review assumptions clearly.",
+          "Include a sample FMEA review report in the repository.",
+          "Push the repo with generated outputs and test coverage."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Select the system or subsystem to analyze", "status": "planned" },
+      { "task": "Define severity, occurrence, and detection scales", "status": "planned" },
+      { "task": "Model failure modes, causes, effects, and controls", "status": "planned" },
+      { "task": "Implement risk-priority calculations and reports", "status": "planned" },
+      { "task": "Trace mitigations to functions or requirements", "status": "planned" },
+      { "task": "Add tests for invalid scores and missing controls", "status": "planned" },
+      { "task": "Write a review-ready README and sample report", "status": "planned" },
+      { "task": "Publish and push the repository", "status": "planned" }
+    ],
+    "deliverables": [
+      "Structured FMEA dataset",
+      "Risk-priority analysis engine",
+      "Mitigation traceability report",
+      "Failure-review sample output",
+      "Public reliability engineering repository"
+    ]
+  }
+]
+

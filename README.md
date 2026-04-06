@@ -15,7 +15,7 @@ If you want to grow this repository into a full portfolio, these are strong foll
 5. **Trade Study Engine**: score architecture options against weighted mission criteria.
 6. **FMEA and Reliability Workbench**: connect failure modes, mitigations, and residual risk.
 
-This repository implements Idea 1 completely and includes a step-by-step expansion plan in [docs/project_plan.md](docs/project_plan.md).
+This repository implements Idea 1 completely and now includes a generated portfolio roadmap for all six ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
 
 ## What This Repo Demonstrates
 
@@ -45,12 +45,14 @@ This repository implements Idea 1 completely and includes a step-by-step expansi
 ```bash
 make test
 make audit
+make roadmap
 ```
 
 Or run the CLI directly:
 
 ```bash
 PYTHONPATH=src python3 -m se_traceability_lab.cli audit --data-dir data --export-dir reports
+PYTHONPATH=src python3 -m se_traceability_lab.cli roadmap --projects-file data/portfolio_projects.json --export-path reports/portfolio-roadmap.md
 ```
 
 ## Sample Output
@@ -61,6 +63,7 @@ After running the audit command the tool exports:
 - `reports/traceability-matrix.csv`
 - `reports/interface-register.csv`
 - `reports/risk-register.csv`
+- `reports/portfolio-roadmap.md`
 
 The summary includes requirement coverage, high-risk count, interface inventory, and any validation errors or warnings.
 
@@ -71,8 +74,9 @@ The summary includes requirement coverage, high-risk count, interface inventory,
 - [docs/project_plan.md](docs/project_plan.md)
 - [docs/system_concept.md](docs/system_concept.md)
 - [docs/verification_strategy.md](docs/verification_strategy.md)
+- `data/portfolio_projects.json`
+- `reports/portfolio-roadmap.md`
 
 ## Why This Works As A Portfolio Piece
 
-Hiring managers can inspect the system concept, the engineering data, the automation quality, and the software discipline in one place. It is not just a document dump: it shows systems thinking, structure, traceability, and implementation.
-
+Hiring managers can inspect the system concept, the engineering data, the automation quality, and the software discipline in one place. It is not just a document dump: it shows systems thinking, structure, traceability, implementation, and an actionable portfolio roadmap for follow-on repos.

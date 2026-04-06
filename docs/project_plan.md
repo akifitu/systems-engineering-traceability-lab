@@ -2,6 +2,8 @@
 
 This plan is written as a practical roadmap for a systems engineering student portfolio.
 
+For the complete multi-project portfolio roadmap and todo checklist across all ideas, see `reports/portfolio-roadmap.md`.
+
 ## Phase 1: Define the flagship problem
 
 1. Pick a realistic system context with multiple subsystems and non-trivial interfaces.
@@ -44,4 +46,3 @@ This plan is written as a practical roadmap for a systems engineering student po
 - add trade study scoring
 - add web visualization
 - add MBSE-friendly export formats
-

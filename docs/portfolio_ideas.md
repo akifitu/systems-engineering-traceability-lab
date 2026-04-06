@@ -67,3 +67,14 @@ Skills shown:
 
 The first project is implemented in this repository because it gives the broadest systems engineering signal with a manageable software scope.
 
+## Where The Step-By-Step Plans Live
+
+The structured source of truth is `data/portfolio_projects.json`.
+
+You can regenerate the full roadmap and todo checklist with:
+
+```bash
+make roadmap
+```
+
+The generated reviewer-facing output is `reports/portfolio-roadmap.md`.
