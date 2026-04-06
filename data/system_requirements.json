@@ -1,0 +1,48 @@
+[
+  {
+    "id": "SYS-001",
+    "title": "Flight endurance",
+    "text": "The system shall provide at least 45 minutes of endurance under nominal daytime conditions.",
+    "parents": ["STK-002"],
+    "verification_methods": ["analysis", "test"],
+    "tests": ["TST-001"],
+    "component_allocations": ["COMP-PWR", "COMP-AIRFRAME"]
+  },
+  {
+    "id": "SYS-002",
+    "title": "Alert latency",
+    "text": "The system shall classify and transmit hotspot alerts within 60 seconds of detection.",
+    "parents": ["STK-001"],
+    "verification_methods": ["analysis", "test"],
+    "tests": ["TST-002"],
+    "component_allocations": ["COMP-PAYLOAD", "COMP-MC", "COMP-COMS", "COMP-GCS"]
+  },
+  {
+    "id": "SYS-003",
+    "title": "Link resilience",
+    "text": "The system shall enter degraded mission mode within 5 seconds of LTE loss and preserve last known mission data.",
+    "parents": ["STK-003", "STK-004"],
+    "verification_methods": ["demonstration", "test"],
+    "tests": ["TST-003"],
+    "component_allocations": ["COMP-MC", "COMP-COMS", "COMP-GCS"]
+  },
+  {
+    "id": "SYS-004",
+    "title": "Mission traceability",
+    "text": "The system shall record operator commands, mission events, and generated alerts in a retrievable audit log.",
+    "parents": ["STK-004"],
+    "verification_methods": ["inspection", "test"],
+    "tests": ["TST-004"],
+    "component_allocations": ["COMP-MC", "COMP-GCS", "COMP-COMS"]
+  },
+  {
+    "id": "SYS-005",
+    "title": "Survey coverage",
+    "text": "The system shall survey at least 25 square kilometers per sortie between 300 and 600 meters altitude.",
+    "parents": ["STK-001", "STK-002"],
+    "verification_methods": ["analysis", "demonstration"],
+    "tests": ["TST-005"],
+    "component_allocations": ["COMP-AIRFRAME", "COMP-PAYLOAD", "COMP-MC"]
+  }
+]
+

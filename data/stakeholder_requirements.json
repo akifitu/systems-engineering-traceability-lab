@@ -1,0 +1,27 @@
+[
+  {
+    "id": "STK-001",
+    "title": "Early wildfire alerting",
+    "text": "The system shall detect thermal anomalies across a 25 square kilometer forest sector and alert operators within 60 seconds.",
+    "priority": "critical"
+  },
+  {
+    "id": "STK-002",
+    "title": "Mission endurance",
+    "text": "The system shall sustain at least 45 minutes of on-station operation per sortie.",
+    "priority": "high"
+  },
+  {
+    "id": "STK-003",
+    "title": "Safe degraded operation",
+    "text": "The system shall maintain safe fallback behavior when GNSS or LTE connectivity degrades.",
+    "priority": "critical"
+  },
+  {
+    "id": "STK-004",
+    "title": "Traceable mission history",
+    "text": "The system shall preserve mission data, operator actions, and alerts for post-mission review.",
+    "priority": "high"
+  }
+]
+

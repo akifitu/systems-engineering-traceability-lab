@@ -1,0 +1,43 @@
+[
+  {
+    "id": "RSK-001",
+    "description": "Battery thermal runaway during high-temperature summer operations",
+    "likelihood": 2,
+    "consequence": 5,
+    "mitigation": "Use qualified cells, thermal monitoring, and preflight health checks.",
+    "related_requirements": ["SYS-001", "SUB-PWR-001"]
+  },
+  {
+    "id": "RSK-002",
+    "description": "False positive hotspot detection drives unnecessary dispatch activity",
+    "likelihood": 3,
+    "consequence": 4,
+    "mitigation": "Blend thermal thresholds with confidence scoring and operator review.",
+    "related_requirements": ["SYS-002", "SUB-PAY-001", "SUB-GCS-001"]
+  },
+  {
+    "id": "RSK-003",
+    "description": "LTE backhaul outage delays alert delivery",
+    "likelihood": 4,
+    "consequence": 3,
+    "mitigation": "Provide degraded-mode buffering and alternate return-to-home procedures.",
+    "related_requirements": ["SYS-003", "SUB-COMS-001"]
+  },
+  {
+    "id": "RSK-004",
+    "description": "GNSS degradation causes unstable navigation near terrain features",
+    "likelihood": 3,
+    "consequence": 4,
+    "mitigation": "Implement loiter fallback, geofence limits, and operator override paths.",
+    "related_requirements": ["SYS-003", "SUB-NAV-001"]
+  },
+  {
+    "id": "RSK-005",
+    "description": "Mission logs are incomplete after abrupt power loss",
+    "likelihood": 2,
+    "consequence": 4,
+    "mitigation": "Flush event batches frequently and archive logs on the ground station.",
+    "related_requirements": ["SYS-004", "SUB-MC-001", "SUB-COMS-001"]
+  }
+]
+

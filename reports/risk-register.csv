@@ -1,0 +1,6 @@
+id,description,likelihood,consequence,score,level,mitigation,related_requirements
+RSK-001,Battery thermal runaway during high-temperature summer operations,2,5,10,high,"Use qualified cells, thermal monitoring, and preflight health checks.",SYS-001; SUB-PWR-001
+RSK-002,False positive hotspot detection drives unnecessary dispatch activity,3,4,12,high,Blend thermal thresholds with confidence scoring and operator review.,SYS-002; SUB-PAY-001; SUB-GCS-001
+RSK-003,LTE backhaul outage delays alert delivery,4,3,12,high,Provide degraded-mode buffering and alternate return-to-home procedures.,SYS-003; SUB-COMS-001
+RSK-004,GNSS degradation causes unstable navigation near terrain features,3,4,12,high,"Implement loiter fallback, geofence limits, and operator override paths.",SYS-003; SUB-NAV-001
+RSK-005,Mission logs are incomplete after abrupt power loss,2,4,8,medium,Flush event batches frequently and archive logs on the ground station.,SYS-004; SUB-MC-001; SUB-COMS-001

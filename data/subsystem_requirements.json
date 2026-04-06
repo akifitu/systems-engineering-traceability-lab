@@ -1,0 +1,57 @@
+[
+  {
+    "id": "SUB-PWR-001",
+    "title": "Battery capacity",
+    "text": "The power subsystem shall provide at least 900 watt-hours of usable energy at mission start.",
+    "parents": ["SYS-001"],
+    "verification_methods": ["analysis", "inspection"],
+    "tests": ["TST-006"],
+    "component_allocations": ["COMP-PWR"]
+  },
+  {
+    "id": "SUB-MC-001",
+    "title": "Alert message schema",
+    "text": "The mission computer shall generate a JSON alert message containing timestamp, GPS position, confidence, and snapshot URI.",
+    "parents": ["SYS-002", "SYS-004"],
+    "verification_methods": ["inspection", "test"],
+    "tests": ["TST-007"],
+    "component_allocations": ["COMP-MC"]
+  },
+  {
+    "id": "SUB-COMS-001",
+    "title": "Telemetry buffering",
+    "text": "The communications subsystem shall buffer at least 300 alert or telemetry events during backhaul loss.",
+    "parents": ["SYS-003", "SYS-004"],
+    "verification_methods": ["analysis", "test"],
+    "tests": ["TST-008"],
+    "component_allocations": ["COMP-COMS"]
+  },
+  {
+    "id": "SUB-PAY-001",
+    "title": "Thermal imaging performance",
+    "text": "The payload shall capture thermal imagery with a ground sample distance of 1 meter or better at 500 meters altitude.",
+    "parents": ["SYS-002", "SYS-005"],
+    "verification_methods": ["analysis", "test"],
+    "tests": ["TST-009"],
+    "component_allocations": ["COMP-PAYLOAD"]
+  },
+  {
+    "id": "SUB-GCS-001",
+    "title": "Operator display latency",
+    "text": "The ground control station shall display a new hotspot alert to the operator within 5 seconds of receipt.",
+    "parents": ["SYS-002"],
+    "verification_methods": ["demonstration", "test"],
+    "tests": ["TST-010"],
+    "component_allocations": ["COMP-GCS"]
+  },
+  {
+    "id": "SUB-NAV-001",
+    "title": "Safe loiter fallback",
+    "text": "The airframe autopilot shall command loiter hold for at least 10 minutes after GNSS degradation while waiting for operator override or return-to-home trigger.",
+    "parents": ["SYS-003"],
+    "verification_methods": ["demonstration", "test"],
+    "tests": ["TST-011"],
+    "component_allocations": ["COMP-AIRFRAME"]
+  }
+]
+

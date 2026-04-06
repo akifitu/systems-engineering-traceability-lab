@@ -1,0 +1,16 @@
+id,name,source,target,signal,protocol,payload
+IF-001,Thermal frame stream,COMP-PAYLOAD,COMP-MC,thermal_imagery,MIPI CSI-2,14-bit thermal frames at 30 fps
+IF-002,Position state uplink,COMP-AIRFRAME,COMP-MC,position_state,MAVLink,"latitude, longitude, altitude, velocity"
+IF-003,GNSS health uplink,COMP-AIRFRAME,COMP-MC,gnss_status,MAVLink,status flag and dilution metrics
+IF-004,Hotspot candidate stream,COMP-PAYLOAD,COMP-MC,hotspot_candidates,UDP,candidate centroids and confidence values
+IF-005,Alert publication,COMP-MC,COMP-COMS,alert_message,JSON over MQTT,"timestamp, position, confidence, snapshot URI"
+IF-006,Telemetry publication,COMP-MC,COMP-COMS,telemetry_bundle,Protocol Buffers over TCP,"health, state, and mission telemetry"
+IF-007,Mission event archive feed,COMP-MC,COMP-COMS,mission_event_log,NDJSON over TCP,mission events and operator action records
+IF-008,Ground alert feed,COMP-COMS,COMP-GCS,gcs_alert_feed,MQTT over TLS,alert messages forwarded to operators
+IF-009,Ground telemetry feed,COMP-COMS,COMP-GCS,gcs_telemetry_feed,MQTT over TLS,mission telemetry for operator display
+IF-010,Backhaul link health,COMP-COMS,COMP-GCS,link_status,MQTT over TLS,"availability, latency, and packet loss indicators"
+IF-011,Operator command uplink,COMP-GCS,COMP-MC,operator_command,gRPC,operator mode changes and acknowledgements
+IF-012,Mission profile uplink,COMP-GCS,COMP-AIRFRAME,mission_profile,MAVLink mission upload,survey polygon and waypoint plan
+IF-013,Fallback mode control,COMP-MC,COMP-AIRFRAME,fallback_mode_command,MAVLink command,"loiter, return-to-home, or hold directives"
+IF-014,Power bus status to airframe,COMP-PWR,COMP-AIRFRAME,power_bus_status,CAN,"bus voltage, current, and health flags"
+IF-015,Power bus status to payload,COMP-PWR,COMP-PAYLOAD,power_bus_status,CAN,"bus voltage, current, and health flags"

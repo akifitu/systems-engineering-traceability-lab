@@ -1,0 +1,91 @@
+[
+  {
+    "id": "TST-001",
+    "title": "Endurance flight test",
+    "method": "test",
+    "requirement_ids": ["SYS-001"],
+    "procedure": "Fly the representative mission profile in nominal daytime conditions.",
+    "success_criteria": "Measured endurance is at least 45 minutes."
+  },
+  {
+    "id": "TST-002",
+    "title": "Alert latency exercise",
+    "method": "test",
+    "requirement_ids": ["SYS-002"],
+    "procedure": "Inject calibrated hotspot imagery and measure alert publication latency.",
+    "success_criteria": "Elapsed time from candidate detection to alert publication is 60 seconds or less."
+  },
+  {
+    "id": "TST-003",
+    "title": "Backhaul loss degraded-mode test",
+    "method": "test",
+    "requirement_ids": ["SYS-003"],
+    "procedure": "Interrupt LTE backhaul during mission execution and observe system behavior.",
+    "success_criteria": "The mission computer enters degraded mode within 5 seconds and retains mission data."
+  },
+  {
+    "id": "TST-004",
+    "title": "Audit log review",
+    "method": "inspection",
+    "requirement_ids": ["SYS-004"],
+    "procedure": "Inspect stored mission logs after a representative sortie.",
+    "success_criteria": "Commands, mission events, and alerts are recoverable from the audit log."
+  },
+  {
+    "id": "TST-005",
+    "title": "Coverage demonstration",
+    "method": "demonstration",
+    "requirement_ids": ["SYS-005"],
+    "procedure": "Run a simulated sortie over the planned survey polygon.",
+    "success_criteria": "The sortie covers at least 25 square kilometers in the required altitude band."
+  },
+  {
+    "id": "TST-006",
+    "title": "Battery energy budget analysis",
+    "method": "analysis",
+    "requirement_ids": ["SUB-PWR-001"],
+    "procedure": "Review the battery configuration, usable depth of discharge, and mission load profile.",
+    "success_criteria": "Calculated usable energy is at least 900 watt-hours."
+  },
+  {
+    "id": "TST-007",
+    "title": "Alert message contract test",
+    "method": "test",
+    "requirement_ids": ["SUB-MC-001"],
+    "procedure": "Emit an alert from the mission computer and validate the JSON payload.",
+    "success_criteria": "Timestamp, GPS position, confidence, and snapshot URI fields are present and populated."
+  },
+  {
+    "id": "TST-008",
+    "title": "Telemetry buffering analysis",
+    "method": "analysis",
+    "requirement_ids": ["SUB-COMS-001"],
+    "procedure": "Calculate event buffer depth against representative outage conditions.",
+    "success_criteria": "The communications subsystem can buffer at least 300 events before overwrite."
+  },
+  {
+    "id": "TST-009",
+    "title": "Thermal payload range test",
+    "method": "test",
+    "requirement_ids": ["SUB-PAY-001"],
+    "procedure": "Measure thermal image performance at 500 meters altitude using a calibrated target set.",
+    "success_criteria": "Ground sample distance is 1 meter or better."
+  },
+  {
+    "id": "TST-010",
+    "title": "Operator alert display demonstration",
+    "method": "demonstration",
+    "requirement_ids": ["SUB-GCS-001"],
+    "procedure": "Forward a new alert to the ground station and time the operator display update.",
+    "success_criteria": "A new alert is displayed to the operator within 5 seconds."
+  },
+  {
+    "id": "TST-011",
+    "title": "GNSS degraded loiter test",
+    "method": "test",
+    "requirement_ids": ["SUB-NAV-001"],
+    "procedure": "Inject GNSS degradation and monitor autopilot fallback behavior.",
+    "success_criteria": "The airframe enters loiter hold for at least 10 minutes pending override or return-to-home."
+  }
+]
+

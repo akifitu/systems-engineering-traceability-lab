@@ -1,0 +1,39 @@
+[
+  {
+    "id": "COMP-AIRFRAME",
+    "name": "Airframe and Autopilot",
+    "inputs": ["mission_profile", "fallback_mode_command", "power_bus_status"],
+    "outputs": ["position_state", "attitude_state", "platform_health", "gnss_status"]
+  },
+  {
+    "id": "COMP-PAYLOAD",
+    "name": "Thermal Payload",
+    "inputs": ["stabilization_state", "survey_waypoint", "power_bus_status"],
+    "outputs": ["thermal_imagery", "hotspot_candidates", "payload_health"]
+  },
+  {
+    "id": "COMP-MC",
+    "name": "Mission Computer",
+    "inputs": ["thermal_imagery", "hotspot_candidates", "position_state", "gnss_status", "operator_command"],
+    "outputs": ["alert_message", "mission_event_log", "fallback_mode_command", "telemetry_bundle"]
+  },
+  {
+    "id": "COMP-COMS",
+    "name": "Communications Subsystem",
+    "inputs": ["alert_message", "telemetry_bundle", "mission_event_log"],
+    "outputs": ["gcs_alert_feed", "gcs_telemetry_feed", "link_status"]
+  },
+  {
+    "id": "COMP-GCS",
+    "name": "Ground Control Station",
+    "inputs": ["gcs_alert_feed", "gcs_telemetry_feed", "link_status"],
+    "outputs": ["operator_command", "mission_profile", "mission_archive"]
+  },
+  {
+    "id": "COMP-PWR",
+    "name": "Power Subsystem",
+    "inputs": ["mission_profile"],
+    "outputs": ["power_bus_status", "battery_state_estimate"]
+  }
+]
+

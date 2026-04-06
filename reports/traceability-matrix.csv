@@ -1,0 +1,16 @@
+id,level,title,parents,verification_methods,tests,allocations
+STK-001,stakeholder,Early wildfire alerting,,,,
+STK-002,stakeholder,Mission endurance,,,,
+STK-003,stakeholder,Safe degraded operation,,,,
+STK-004,stakeholder,Traceable mission history,,,,
+SYS-001,system,Flight endurance,STK-002,analysis; test,TST-001,COMP-PWR; COMP-AIRFRAME
+SYS-002,system,Alert latency,STK-001,analysis; test,TST-002,COMP-PAYLOAD; COMP-MC; COMP-COMS; COMP-GCS
+SYS-003,system,Link resilience,STK-003; STK-004,demonstration; test,TST-003,COMP-MC; COMP-COMS; COMP-GCS
+SYS-004,system,Mission traceability,STK-004,inspection; test,TST-004,COMP-MC; COMP-GCS; COMP-COMS
+SYS-005,system,Survey coverage,STK-001; STK-002,analysis; demonstration,TST-005,COMP-AIRFRAME; COMP-PAYLOAD; COMP-MC
+SUB-PWR-001,subsystem,Battery capacity,SYS-001,analysis; inspection,TST-006,COMP-PWR
+SUB-MC-001,subsystem,Alert message schema,SYS-002; SYS-004,inspection; test,TST-007,COMP-MC
+SUB-COMS-001,subsystem,Telemetry buffering,SYS-003; SYS-004,analysis; test,TST-008,COMP-COMS
+SUB-PAY-001,subsystem,Thermal imaging performance,SYS-002; SYS-005,analysis; test,TST-009,COMP-PAYLOAD
+SUB-GCS-001,subsystem,Operator display latency,SYS-002,demonstration; test,TST-010,COMP-GCS
+SUB-NAV-001,subsystem,Safe loiter fallback,SYS-003,demonstration; test,TST-011,COMP-AIRFRAME

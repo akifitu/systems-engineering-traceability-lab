@@ -1,0 +1,138 @@
+[
+  {
+    "id": "IF-001",
+    "name": "Thermal frame stream",
+    "source": "COMP-PAYLOAD",
+    "target": "COMP-MC",
+    "signal": "thermal_imagery",
+    "protocol": "MIPI CSI-2",
+    "payload": "14-bit thermal frames at 30 fps"
+  },
+  {
+    "id": "IF-002",
+    "name": "Position state uplink",
+    "source": "COMP-AIRFRAME",
+    "target": "COMP-MC",
+    "signal": "position_state",
+    "protocol": "MAVLink",
+    "payload": "latitude, longitude, altitude, velocity"
+  },
+  {
+    "id": "IF-003",
+    "name": "GNSS health uplink",
+    "source": "COMP-AIRFRAME",
+    "target": "COMP-MC",
+    "signal": "gnss_status",
+    "protocol": "MAVLink",
+    "payload": "status flag and dilution metrics"
+  },
+  {
+    "id": "IF-004",
+    "name": "Hotspot candidate stream",
+    "source": "COMP-PAYLOAD",
+    "target": "COMP-MC",
+    "signal": "hotspot_candidates",
+    "protocol": "UDP",
+    "payload": "candidate centroids and confidence values"
+  },
+  {
+    "id": "IF-005",
+    "name": "Alert publication",
+    "source": "COMP-MC",
+    "target": "COMP-COMS",
+    "signal": "alert_message",
+    "protocol": "JSON over MQTT",
+    "payload": "timestamp, position, confidence, snapshot URI"
+  },
+  {
+    "id": "IF-006",
+    "name": "Telemetry publication",
+    "source": "COMP-MC",
+    "target": "COMP-COMS",
+    "signal": "telemetry_bundle",
+    "protocol": "Protocol Buffers over TCP",
+    "payload": "health, state, and mission telemetry"
+  },
+  {
+    "id": "IF-007",
+    "name": "Mission event archive feed",
+    "source": "COMP-MC",
+    "target": "COMP-COMS",
+    "signal": "mission_event_log",
+    "protocol": "NDJSON over TCP",
+    "payload": "mission events and operator action records"
+  },
+  {
+    "id": "IF-008",
+    "name": "Ground alert feed",
+    "source": "COMP-COMS",
+    "target": "COMP-GCS",
+    "signal": "gcs_alert_feed",
+    "protocol": "MQTT over TLS",
+    "payload": "alert messages forwarded to operators"
+  },
+  {
+    "id": "IF-009",
+    "name": "Ground telemetry feed",
+    "source": "COMP-COMS",
+    "target": "COMP-GCS",
+    "signal": "gcs_telemetry_feed",
+    "protocol": "MQTT over TLS",
+    "payload": "mission telemetry for operator display"
+  },
+  {
+    "id": "IF-010",
+    "name": "Backhaul link health",
+    "source": "COMP-COMS",
+    "target": "COMP-GCS",
+    "signal": "link_status",
+    "protocol": "MQTT over TLS",
+    "payload": "availability, latency, and packet loss indicators"
+  },
+  {
+    "id": "IF-011",
+    "name": "Operator command uplink",
+    "source": "COMP-GCS",
+    "target": "COMP-MC",
+    "signal": "operator_command",
+    "protocol": "gRPC",
+    "payload": "operator mode changes and acknowledgements"
+  },
+  {
+    "id": "IF-012",
+    "name": "Mission profile uplink",
+    "source": "COMP-GCS",
+    "target": "COMP-AIRFRAME",
+    "signal": "mission_profile",
+    "protocol": "MAVLink mission upload",
+    "payload": "survey polygon and waypoint plan"
+  },
+  {
+    "id": "IF-013",
+    "name": "Fallback mode control",
+    "source": "COMP-MC",
+    "target": "COMP-AIRFRAME",
+    "signal": "fallback_mode_command",
+    "protocol": "MAVLink command",
+    "payload": "loiter, return-to-home, or hold directives"
+  },
+  {
+    "id": "IF-014",
+    "name": "Power bus status to airframe",
+    "source": "COMP-PWR",
+    "target": "COMP-AIRFRAME",
+    "signal": "power_bus_status",
+    "protocol": "CAN",
+    "payload": "bus voltage, current, and health flags"
+  },
+  {
+    "id": "IF-015",
+    "name": "Power bus status to payload",
+    "source": "COMP-PWR",
+    "target": "COMP-PAYLOAD",
+    "signal": "power_bus_status",
+    "protocol": "CAN",
+    "payload": "bus voltage, current, and health flags"
+  }
+]
+
