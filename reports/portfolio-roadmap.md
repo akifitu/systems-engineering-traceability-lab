@@ -5,14 +5,14 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 ## Portfolio Summary
 
 - Total projects: 6
-- Built projects: 2
-- Planned projects: 4
+- Built projects: 3
+- Planned projects: 3
 
 ## Recommended Build Order
 
 1. Requirements Traceability Lab (`systems-engineering-traceability-lab`, status: built, duration: 1-2 weeks)
 2. Verification Readiness Dashboard (`verification-readiness-dashboard`, status: built, duration: 2-3 weeks)
-3. Interface Control Toolkit (`interface-control-toolkit`, status: planned, duration: 1-2 weeks)
+3. Interface Control Toolkit (`interface-control-toolkit`, status: built, duration: 1-2 weeks)
 4. Trade Study Engine (`trade-study-engine`, status: planned, duration: 2-3 weeks)
 5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: planned, duration: 2-3 weeks)
 6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: planned, duration: 2-3 weeks)
@@ -123,7 +123,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 - Goal: Model subsystem interfaces, validate producer-consumer compatibility, and export interface control documentation.
 - Suggested repository name: `interface-control-toolkit`
-- Current status: `planned`
+- Current status: `built`
 - Estimated duration: 1-2 weeks
 - Recommended stack: Python, JSON, Markdown, CSV
 - Skills demonstrated: interface management, integration engineering, configuration control, automation
@@ -153,14 +153,14 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ### To-do checklist
 
-- [ ] Choose the reference system and subsystem set
-- [ ] Define an interface schema with timing and units
-- [ ] Implement producer-consumer validation
-- [ ] Generate interface register and ICD exports
-- [ ] Add negative tests for mismatched interfaces
-- [ ] Write onboarding documentation for new interfaces
-- [ ] Create a sample dataset and diagrams
-- [ ] Publish and push the repository
+- [x] Choose the reference system and subsystem set
+- [x] Define an interface schema with timing and units
+- [x] Implement producer-consumer validation
+- [x] Generate interface register and ICD exports
+- [x] Add negative tests for mismatched interfaces
+- [x] Write onboarding documentation for new interfaces
+- [x] Create a sample dataset and diagrams
+- [x] Publish and push the repository
 
 ### Expected deliverables
 

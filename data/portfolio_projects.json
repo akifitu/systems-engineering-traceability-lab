@@ -166,7 +166,7 @@
     "slug": "interface-control-toolkit",
     "title": "Interface Control Toolkit",
     "repo_name": "interface-control-toolkit",
-    "status": "planned",
+    "status": "built",
     "build_order": 3,
     "duration_weeks": "1-2",
     "goal": "Model subsystem interfaces, validate producer-consumer compatibility, and export interface control documentation.",
@@ -225,14 +225,14 @@
       }
     ],
     "todos": [
-      { "task": "Choose the reference system and subsystem set", "status": "planned" },
-      { "task": "Define an interface schema with timing and units", "status": "planned" },
-      { "task": "Implement producer-consumer validation", "status": "planned" },
-      { "task": "Generate interface register and ICD exports", "status": "planned" },
-      { "task": "Add negative tests for mismatched interfaces", "status": "planned" },
-      { "task": "Write onboarding documentation for new interfaces", "status": "planned" },
-      { "task": "Create a sample dataset and diagrams", "status": "planned" },
-      { "task": "Publish and push the repository", "status": "planned" }
+      { "task": "Choose the reference system and subsystem set", "status": "done" },
+      { "task": "Define an interface schema with timing and units", "status": "done" },
+      { "task": "Implement producer-consumer validation", "status": "done" },
+      { "task": "Generate interface register and ICD exports", "status": "done" },
+      { "task": "Add negative tests for mismatched interfaces", "status": "done" },
+      { "task": "Write onboarding documentation for new interfaces", "status": "done" },
+      { "task": "Create a sample dataset and diagrams", "status": "done" },
+      { "task": "Publish and push the repository", "status": "done" }
     ],
     "deliverables": [
       "Interface schema and sample dataset",
