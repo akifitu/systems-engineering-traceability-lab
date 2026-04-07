@@ -56,6 +56,16 @@ Skills shown:
 - hazard analysis
 - risk reduction logic
 
+## 7. Autonomous Disaster Response Digital Thread
+
+Create a large umbrella repository that links the portfolio's child repositories as subrepositories and presents them as one recruiter-friendly system-of-systems program.
+
+Skills shown:
+- program structure
+- digital thread thinking
+- configuration management
+- portfolio scaling
+
 ## Recommended Build Order
 
 1. Requirements Traceability Lab
@@ -64,14 +74,16 @@ Skills shown:
 4. Trade Study Engine
 5. FMEA and Reliability Workbench
 6. Satellite Power Budget Simulator
+7. Autonomous Disaster Response Digital Thread
 
-The first project is implemented in this repository, and the next five are live as separate public repos:
+The first project is implemented in this repository, the next five are live as separate public repos, and the capstone umbrella repo is now live too:
 
 - `https://github.com/akifitu/verification-readiness-dashboard`
 - `https://github.com/akifitu/interface-control-toolkit`
 - `https://github.com/akifitu/trade-study-engine`
 - `https://github.com/akifitu/fmea-reliability-workbench`
 - `https://github.com/akifitu/satellite-power-budget-simulator`
+- `https://github.com/akifitu/autonomous-disaster-response-digital-thread`
 
 ## Where The Step-By-Step Plans Live
 

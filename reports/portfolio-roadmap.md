@@ -4,8 +4,8 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ## Portfolio Summary
 
-- Total projects: 6
-- Built projects: 6
+- Total projects: 7
+- Built projects: 7
 - Planned projects: 0
 
 ## Recommended Build Order
@@ -16,6 +16,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 4. Trade Study Engine (`trade-study-engine`, status: built, duration: 2-3 weeks)
 5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: built, duration: 2-3 weeks)
 6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: built, duration: 2-3 weeks)
+7. Autonomous Disaster Response Digital Thread (`autonomous-disaster-response-digital-thread`, status: built, duration: 2-4 weeks)
 
 ## 1. Requirements Traceability Lab
 
@@ -322,3 +323,54 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 - Power margin plots
 - Validation notebook or report
 - Public case-study repository
+
+## 7. Autonomous Disaster Response Digital Thread
+
+- Goal: Tie multiple systems engineering repositories into one program-level digital thread with subrepositories, generated portfolio artifacts, and recruiter-friendly program navigation.
+- Suggested repository name: `autonomous-disaster-response-digital-thread`
+- Current status: `built`
+- Estimated duration: 2-4 weeks
+- Recommended stack: Python, JSON, HTML, Git submodules, GitHub Actions
+- Skills demonstrated: program architecture, digital thread integration, configuration management, portfolio scaling
+
+### Step-by-step plan
+
+1. Select the umbrella theme
+   - Compare several large-scale systems engineering program concepts.
+   - Choose a theme that can justify multiple lifecycle workstreams under one narrative.
+   - Document why the selected direction reads as a coherent system-of-systems.
+2. Define the program structure
+   - Map each child repository to a lifecycle phase or systems engineering concern.
+   - Create a machine-readable manifest with repo names, local paths, lifecycle roles, and URLs.
+   - Write recruiter guidance and system-of-systems framing documents.
+3. Build the umbrella automation
+   - Implement a validator for workstream metadata, submodule registration, and repository health.
+   - Export program-level Markdown, CSV, and HTML artifacts for reviewers.
+   - Add tests that keep the manifest and submodule inventory aligned.
+4. Link and verify subrepositories
+   - Add child repositories under `workstreams/` as Git submodules.
+   - Run end-to-end tests and fix any path, metadata, or export issues.
+   - Regenerate program reports so the umbrella repo is review-ready on first open.
+5. Publish professionally
+   - Write a top-level README that explains the portfolio logic clearly.
+   - License the umbrella repo and configure CI with recursive submodule checkout.
+   - Create the public GitHub repo, push it, and add descriptive topics.
+
+### To-do checklist
+
+- [x] Evaluate multiple large-scale umbrella repo themes
+- [x] Select a coherent system-of-systems narrative
+- [x] Create the workstream manifest and recruiter docs
+- [x] Implement the umbrella validator and exporter CLI
+- [x] Add all child repositories as submodules
+- [x] Run validation, generate program reports, and fix issues
+- [x] Set up recursive-submodule CI
+- [x] Publish and push the umbrella repository
+
+### Expected deliverables
+
+- Program-level workstream manifest
+- Linked systems engineering subrepositories
+- Umbrella validation CLI
+- Generated HTML and Markdown program dashboard
+- Public recruiter-facing digital thread repository

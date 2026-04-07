@@ -484,5 +484,87 @@
       "Failure-review sample output",
       "Public reliability engineering repository"
     ]
+  },
+  {
+    "id": "PORT-007",
+    "slug": "autonomous-disaster-response-digital-thread",
+    "title": "Autonomous Disaster Response Digital Thread",
+    "repo_name": "autonomous-disaster-response-digital-thread",
+    "status": "built",
+    "build_order": 7,
+    "duration_weeks": "2-4",
+    "goal": "Tie multiple systems engineering repositories into one program-level digital thread with subrepositories, generated portfolio artifacts, and recruiter-friendly program navigation.",
+    "skills": [
+      "program architecture",
+      "digital thread integration",
+      "configuration management",
+      "portfolio scaling"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "HTML",
+      "Git submodules",
+      "GitHub Actions"
+    ],
+    "phases": [
+      {
+        "name": "Select the umbrella theme",
+        "steps": [
+          "Compare several large-scale systems engineering program concepts.",
+          "Choose a theme that can justify multiple lifecycle workstreams under one narrative.",
+          "Document why the selected direction reads as a coherent system-of-systems."
+        ]
+      },
+      {
+        "name": "Define the program structure",
+        "steps": [
+          "Map each child repository to a lifecycle phase or systems engineering concern.",
+          "Create a machine-readable manifest with repo names, local paths, lifecycle roles, and URLs.",
+          "Write recruiter guidance and system-of-systems framing documents."
+        ]
+      },
+      {
+        "name": "Build the umbrella automation",
+        "steps": [
+          "Implement a validator for workstream metadata, submodule registration, and repository health.",
+          "Export program-level Markdown, CSV, and HTML artifacts for reviewers.",
+          "Add tests that keep the manifest and submodule inventory aligned."
+        ]
+      },
+      {
+        "name": "Link and verify subrepositories",
+        "steps": [
+          "Add child repositories under `workstreams/` as Git submodules.",
+          "Run end-to-end tests and fix any path, metadata, or export issues.",
+          "Regenerate program reports so the umbrella repo is review-ready on first open."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write a top-level README that explains the portfolio logic clearly.",
+          "License the umbrella repo and configure CI with recursive submodule checkout.",
+          "Create the public GitHub repo, push it, and add descriptive topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Evaluate multiple large-scale umbrella repo themes", "status": "done" },
+      { "task": "Select a coherent system-of-systems narrative", "status": "done" },
+      { "task": "Create the workstream manifest and recruiter docs", "status": "done" },
+      { "task": "Implement the umbrella validator and exporter CLI", "status": "done" },
+      { "task": "Add all child repositories as submodules", "status": "done" },
+      { "task": "Run validation, generate program reports, and fix issues", "status": "done" },
+      { "task": "Set up recursive-submodule CI", "status": "done" },
+      { "task": "Publish and push the umbrella repository", "status": "done" }
+    ],
+    "deliverables": [
+      "Program-level workstream manifest",
+      "Linked systems engineering subrepositories",
+      "Umbrella validation CLI",
+      "Generated HTML and Markdown program dashboard",
+      "Public recruiter-facing digital thread repository"
+    ]
   }
 ]

@@ -1,8 +1,25 @@
 # Systems Engineering Traceability Lab
 
+<p align="center">
+  <img src="./docs/assets/cover.svg" alt="Systems Engineering Traceability Lab cover" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Requirements-0f766e?style=for-the-badge" alt="Requirements" />
+  <img src="https://img.shields.io/badge/Interfaces-0891b2?style=for-the-badge" alt="Interfaces" />
+  <img src="https://img.shields.io/badge/Verification-1d4ed8?style=for-the-badge" alt="Verification" />
+</p>
+
 `Systems Engineering Traceability Lab` is a portfolio-ready repository for a systems engineering candidate who wants to show more than static documents. The repo combines a realistic system concept, structured engineering artifacts, automated validation, generated reports, and CI.
 
 The flagship case study models an **Autonomous Wildfire Detection Drone System**. It demonstrates how stakeholder needs turn into system and subsystem requirements, how those requirements map to verification activities, and how interface and risk data stay connected across the repository.
+
+## Demo Preview
+
+<p align="center">
+  <img src="./docs/assets/demo.gif" alt="Systems Engineering Traceability Lab demo gif" width="100%" />
+</p>
 
 ## Portfolio Project Ideas
 
@@ -14,8 +31,11 @@ If you want to grow this repository into a full portfolio, these are strong foll
 4. **Verification Readiness Dashboard**: track verification closure by subsystem and method.
 5. **Trade Study Engine**: score architecture options against weighted mission criteria.
 6. **FMEA and Reliability Workbench**: connect failure modes, mitigations, and residual risk.
+7. **Autonomous Disaster Response Digital Thread**: tie the full portfolio together as a program-level umbrella repo with linked subrepositories.
 
-This repository implements Idea 1 completely and now includes a generated portfolio roadmap for all six ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
+This repository implements Idea 1 completely and now includes a generated portfolio roadmap for seven ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
+
+The capstone umbrella repo is live here: `https://github.com/akifitu/autonomous-disaster-response-digital-thread`
 
 ## What This Repo Demonstrates
 
