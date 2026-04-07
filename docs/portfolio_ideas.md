@@ -66,6 +66,34 @@ Skills shown:
 - configuration management
 - portfolio scaling
 
+## 8. Program Risk Board
+
+Create a program-level risk governance repository that aggregates open technical and integration risks across multiple engineering repos.
+
+Skills shown:
+- risk management
+- review governance
+- residual exposure analysis
+
+## 9. Ops Concept Simulator
+
+Build a repository that models disaster-response mission threads, handoffs, and subsystem participation as structured ConOps scenarios.
+
+Skills shown:
+- concept of operations
+- mission-thread analysis
+- scenario modeling
+
+## 10. Autonomous Disaster Response Program Office
+
+Create a mega-scale umbrella repository that links direct hubs and reports nested workstreams through a layered submodule architecture.
+
+Skills shown:
+- multi-level repo architecture
+- program-office structure
+- configuration management
+- portfolio scaling
+
 ## Recommended Build Order
 
 1. Requirements Traceability Lab
@@ -75,8 +103,11 @@ Skills shown:
 5. FMEA and Reliability Workbench
 6. Satellite Power Budget Simulator
 7. Autonomous Disaster Response Digital Thread
+8. Program Risk Board
+9. Ops Concept Simulator
+10. Autonomous Disaster Response Program Office
 
-The first project is implemented in this repository, the next five are live as separate public repos, and the capstone umbrella repo is now live too:
+The first project is implemented in this repository, the intermediate and umbrella repos are now live, and the biggest program-office layer is live too:
 
 - `https://github.com/akifitu/verification-readiness-dashboard`
 - `https://github.com/akifitu/interface-control-toolkit`
@@ -84,6 +115,9 @@ The first project is implemented in this repository, the next five are live as s
 - `https://github.com/akifitu/fmea-reliability-workbench`
 - `https://github.com/akifitu/satellite-power-budget-simulator`
 - `https://github.com/akifitu/autonomous-disaster-response-digital-thread`
+- `https://github.com/akifitu/program-risk-board`
+- `https://github.com/akifitu/ops-concept-simulator`
+- `https://github.com/akifitu/autonomous-disaster-response-program-office`
 
 ## Where The Step-By-Step Plans Live
 

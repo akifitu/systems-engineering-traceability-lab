@@ -566,5 +566,249 @@
       "Generated HTML and Markdown program dashboard",
       "Public recruiter-facing digital thread repository"
     ]
+  },
+  {
+    "id": "PORT-008",
+    "slug": "program-risk-board",
+    "title": "Program Risk Board",
+    "repo_name": "program-risk-board",
+    "status": "built",
+    "build_order": 8,
+    "duration_weeks": "1-2",
+    "goal": "Aggregate multi-repository technical and integration risks into a program-level review board with structured scoring and exportable decision artifacts.",
+    "skills": [
+      "risk management",
+      "review governance",
+      "residual risk analysis",
+      "program integration"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "HTML"
+    ],
+    "phases": [
+      {
+        "name": "Define the board model",
+        "steps": [
+          "Choose the program-level risk fields, owners, and review gates.",
+          "Define a repeatable scoring method for initial and residual exposure.",
+          "Decide how workstream references and mitigation actions will be captured."
+        ]
+      },
+      {
+        "name": "Build the risk dataset",
+        "steps": [
+          "Create machine-readable program risks linked to specific repositories.",
+          "Capture review gate ownership and mitigation plans.",
+          "Add enough variety to show open, mitigating, and watch states."
+        ]
+      },
+      {
+        "name": "Implement the board automation",
+        "steps": [
+          "Validate scoring ranges and required fields.",
+          "Calculate initial and residual RPN values.",
+          "Export summary, register, and gate-level rollups."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for invalid scores and broken records.",
+          "Check that critical residual risks are flagged correctly.",
+          "Fix report formatting until the repo is reviewer-ready."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write the README and process notes clearly.",
+          "Commit generated artifacts for immediate inspection.",
+          "Push the public repository and add metadata."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Define the risk schema and scoring model", "status": "done" },
+      { "task": "Create a realistic program-level risk dataset", "status": "done" },
+      { "task": "Implement validation, scoring, and exports", "status": "done" },
+      { "task": "Add regression tests", "status": "done" },
+      { "task": "Generate board outputs into the reports folder", "status": "done" },
+      { "task": "Write recruiter-friendly process documentation", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Program-level risk dataset",
+      "Residual risk scoring engine",
+      "Gate-level review outputs",
+      "HTML risk dashboard",
+      "Public governance-focused repository"
+    ]
+  },
+  {
+    "id": "PORT-009",
+    "slug": "ops-concept-simulator",
+    "title": "Ops Concept Simulator",
+    "repo_name": "ops-concept-simulator",
+    "status": "built",
+    "build_order": 9,
+    "duration_weeks": "1-2",
+    "goal": "Model operational mission threads, handoffs, and subsystem participation across disaster-response scenarios in a structured ConOps repository.",
+    "skills": [
+      "concept of operations",
+      "mission-thread analysis",
+      "scenario modeling",
+      "operational architecture"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "HTML"
+    ],
+    "phases": [
+      {
+        "name": "Define the mission threads",
+        "steps": [
+          "Choose realistic disaster-response scenarios.",
+          "Break each scenario into ordered operational phases.",
+          "List which systems participate in each phase."
+        ]
+      },
+      {
+        "name": "Build the scenario dataset",
+        "steps": [
+          "Store phase durations and active systems in machine-readable form.",
+          "Capture mission objectives and scenario-level structure.",
+          "Make handoffs explicit through ordered phase data."
+        ]
+      },
+      {
+        "name": "Implement the simulator",
+        "steps": [
+          "Validate scenario completeness and phase durations.",
+          "Calculate total scenario time and subsystem utilization.",
+          "Export scenario and utilization reports."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for invalid durations and broken phase definitions.",
+          "Check that total hours and handoffs match the source data.",
+          "Fix warnings so the default dataset simulates cleanly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write ConOps notes and a clear README.",
+          "Commit generated dashboards and tables.",
+          "Push publicly and add GitHub metadata."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Define the scenario schema", "status": "done" },
+      { "task": "Build a realistic ConOps dataset", "status": "done" },
+      { "task": "Implement simulation and export logic", "status": "done" },
+      { "task": "Add regression tests", "status": "done" },
+      { "task": "Eliminate warnings in the default dataset", "status": "done" },
+      { "task": "Write documentation and README", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Scenario-driven ConOps dataset",
+      "Operational timing simulator",
+      "Subsystem utilization report",
+      "HTML operations dashboard",
+      "Public operations-focused repository"
+    ]
+  },
+  {
+    "id": "PORT-010",
+    "slug": "autonomous-disaster-response-program-office",
+    "title": "Autonomous Disaster Response Program Office",
+    "repo_name": "autonomous-disaster-response-program-office",
+    "status": "built",
+    "build_order": 10,
+    "duration_weeks": "2-4",
+    "goal": "Create a true program-office scale umbrella repository that links direct hubs and reports nested workstreams through a layered submodule topology.",
+    "skills": [
+      "program structure",
+      "configuration management",
+      "portfolio scaling",
+      "multi-level repository architecture"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "HTML",
+      "Git submodules",
+      "GitHub Actions"
+    ],
+    "phases": [
+      {
+        "name": "Select the mega-repo theme",
+        "steps": [
+          "Compare several large-scale umbrella concepts.",
+          "Select a theme that supports direct hubs and nested workstreams.",
+          "Document the selection rationale."
+        ]
+      },
+      {
+        "name": "Build the direct hub layer",
+        "steps": [
+          "Reuse the digital-thread hub.",
+          "Create governance and operations hubs as independent repositories.",
+          "Define the office-level manifest that ties them together."
+        ]
+      },
+      {
+        "name": "Implement office automation",
+        "steps": [
+          "Validate submodule registration and local hub health.",
+          "Count nested workstream declarations from the digital-thread hub.",
+          "Export recruiter-facing program office artifacts."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for missing fields and broken topology declarations.",
+          "Run the office validator against real local submodules.",
+          "Fix path and reporting issues until the office repo audits cleanly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write architecture, recruiter, and plan documents.",
+          "Configure recursive-submodule CI.",
+          "Push the public umbrella repo and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Select the mega-repo concept", "status": "done" },
+      { "task": "Create the direct governance and operations hubs", "status": "done" },
+      { "task": "Build the office-level validator and exporter", "status": "done" },
+      { "task": "Add all direct hubs as submodules", "status": "done" },
+      { "task": "Validate nested workstream topology", "status": "done" },
+      { "task": "Generate office-level reports", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Program-office manifest",
+      "Layered submodule topology",
+      "Office-level validation CLI",
+      "HTML topology dashboard",
+      "Public mega-scale systems engineering repository"
+    ]
   }
 ]

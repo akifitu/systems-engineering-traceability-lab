@@ -4,8 +4,8 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ## Portfolio Summary
 
-- Total projects: 7
-- Built projects: 7
+- Total projects: 10
+- Built projects: 10
 - Planned projects: 0
 
 ## Recommended Build Order
@@ -17,6 +17,9 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: built, duration: 2-3 weeks)
 6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: built, duration: 2-3 weeks)
 7. Autonomous Disaster Response Digital Thread (`autonomous-disaster-response-digital-thread`, status: built, duration: 2-4 weeks)
+8. Program Risk Board (`program-risk-board`, status: built, duration: 1-2 weeks)
+9. Ops Concept Simulator (`ops-concept-simulator`, status: built, duration: 1-2 weeks)
+10. Autonomous Disaster Response Program Office (`autonomous-disaster-response-program-office`, status: built, duration: 2-4 weeks)
 
 ## 1. Requirements Traceability Lab
 
@@ -374,3 +377,156 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 - Umbrella validation CLI
 - Generated HTML and Markdown program dashboard
 - Public recruiter-facing digital thread repository
+
+## 8. Program Risk Board
+
+- Goal: Aggregate multi-repository technical and integration risks into a program-level review board with structured scoring and exportable decision artifacts.
+- Suggested repository name: `program-risk-board`
+- Current status: `built`
+- Estimated duration: 1-2 weeks
+- Recommended stack: Python, JSON, CSV, HTML
+- Skills demonstrated: risk management, review governance, residual risk analysis, program integration
+
+### Step-by-step plan
+
+1. Define the board model
+   - Choose the program-level risk fields, owners, and review gates.
+   - Define a repeatable scoring method for initial and residual exposure.
+   - Decide how workstream references and mitigation actions will be captured.
+2. Build the risk dataset
+   - Create machine-readable program risks linked to specific repositories.
+   - Capture review gate ownership and mitigation plans.
+   - Add enough variety to show open, mitigating, and watch states.
+3. Implement the board automation
+   - Validate scoring ranges and required fields.
+   - Calculate initial and residual RPN values.
+   - Export summary, register, and gate-level rollups.
+4. Debug and verify
+   - Add tests for invalid scores and broken records.
+   - Check that critical residual risks are flagged correctly.
+   - Fix report formatting until the repo is reviewer-ready.
+5. Publish professionally
+   - Write the README and process notes clearly.
+   - Commit generated artifacts for immediate inspection.
+   - Push the public repository and add metadata.
+
+### To-do checklist
+
+- [x] Define the risk schema and scoring model
+- [x] Create a realistic program-level risk dataset
+- [x] Implement validation, scoring, and exports
+- [x] Add regression tests
+- [x] Generate board outputs into the reports folder
+- [x] Write recruiter-friendly process documentation
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Program-level risk dataset
+- Residual risk scoring engine
+- Gate-level review outputs
+- HTML risk dashboard
+- Public governance-focused repository
+
+## 9. Ops Concept Simulator
+
+- Goal: Model operational mission threads, handoffs, and subsystem participation across disaster-response scenarios in a structured ConOps repository.
+- Suggested repository name: `ops-concept-simulator`
+- Current status: `built`
+- Estimated duration: 1-2 weeks
+- Recommended stack: Python, JSON, CSV, HTML
+- Skills demonstrated: concept of operations, mission-thread analysis, scenario modeling, operational architecture
+
+### Step-by-step plan
+
+1. Define the mission threads
+   - Choose realistic disaster-response scenarios.
+   - Break each scenario into ordered operational phases.
+   - List which systems participate in each phase.
+2. Build the scenario dataset
+   - Store phase durations and active systems in machine-readable form.
+   - Capture mission objectives and scenario-level structure.
+   - Make handoffs explicit through ordered phase data.
+3. Implement the simulator
+   - Validate scenario completeness and phase durations.
+   - Calculate total scenario time and subsystem utilization.
+   - Export scenario and utilization reports.
+4. Debug and verify
+   - Add tests for invalid durations and broken phase definitions.
+   - Check that total hours and handoffs match the source data.
+   - Fix warnings so the default dataset simulates cleanly.
+5. Publish professionally
+   - Write ConOps notes and a clear README.
+   - Commit generated dashboards and tables.
+   - Push publicly and add GitHub metadata.
+
+### To-do checklist
+
+- [x] Define the scenario schema
+- [x] Build a realistic ConOps dataset
+- [x] Implement simulation and export logic
+- [x] Add regression tests
+- [x] Eliminate warnings in the default dataset
+- [x] Write documentation and README
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Scenario-driven ConOps dataset
+- Operational timing simulator
+- Subsystem utilization report
+- HTML operations dashboard
+- Public operations-focused repository
+
+## 10. Autonomous Disaster Response Program Office
+
+- Goal: Create a true program-office scale umbrella repository that links direct hubs and reports nested workstreams through a layered submodule topology.
+- Suggested repository name: `autonomous-disaster-response-program-office`
+- Current status: `built`
+- Estimated duration: 2-4 weeks
+- Recommended stack: Python, JSON, HTML, Git submodules, GitHub Actions
+- Skills demonstrated: program structure, configuration management, portfolio scaling, multi-level repository architecture
+
+### Step-by-step plan
+
+1. Select the mega-repo theme
+   - Compare several large-scale umbrella concepts.
+   - Select a theme that supports direct hubs and nested workstreams.
+   - Document the selection rationale.
+2. Build the direct hub layer
+   - Reuse the digital-thread hub.
+   - Create governance and operations hubs as independent repositories.
+   - Define the office-level manifest that ties them together.
+3. Implement office automation
+   - Validate submodule registration and local hub health.
+   - Count nested workstream declarations from the digital-thread hub.
+   - Export recruiter-facing program office artifacts.
+4. Debug and verify
+   - Add tests for missing fields and broken topology declarations.
+   - Run the office validator against real local submodules.
+   - Fix path and reporting issues until the office repo audits cleanly.
+5. Publish professionally
+   - Write architecture, recruiter, and plan documents.
+   - Configure recursive-submodule CI.
+   - Push the public umbrella repo and add GitHub topics.
+
+### To-do checklist
+
+- [x] Select the mega-repo concept
+- [x] Create the direct governance and operations hubs
+- [x] Build the office-level validator and exporter
+- [x] Add all direct hubs as submodules
+- [x] Validate nested workstream topology
+- [x] Generate office-level reports
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Program-office manifest
+- Layered submodule topology
+- Office-level validation CLI
+- HTML topology dashboard
+- Public mega-scale systems engineering repository

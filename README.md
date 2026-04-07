@@ -32,10 +32,16 @@ If you want to grow this repository into a full portfolio, these are strong foll
 5. **Trade Study Engine**: score architecture options against weighted mission criteria.
 6. **FMEA and Reliability Workbench**: connect failure modes, mitigations, and residual risk.
 7. **Autonomous Disaster Response Digital Thread**: tie the full portfolio together as a program-level umbrella repo with linked subrepositories.
+8. **Program Risk Board**: aggregate program-level risks, review gates, and residual exposure.
+9. **Ops Concept Simulator**: model mission-thread timing and subsystem participation.
+10. **Autonomous Disaster Response Program Office**: layer the portfolio into direct hubs plus nested workstreams through a mega-scale umbrella repo.
 
-This repository implements Idea 1 completely and now includes a generated portfolio roadmap for seven ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
+This repository implements Idea 1 completely and now includes a generated portfolio roadmap for ten ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
 
-The capstone umbrella repo is live here: `https://github.com/akifitu/autonomous-disaster-response-digital-thread`
+The umbrella layers are live here:
+
+- `https://github.com/akifitu/autonomous-disaster-response-digital-thread`
+- `https://github.com/akifitu/autonomous-disaster-response-program-office`
 
 ## What This Repo Demonstrates
 
