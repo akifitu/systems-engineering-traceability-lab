@@ -247,7 +247,7 @@
     "slug": "verification-readiness-dashboard",
     "title": "Verification Readiness Dashboard",
     "repo_name": "verification-readiness-dashboard",
-    "status": "planned",
+    "status": "built",
     "build_order": 2,
     "duration_weeks": "2-3",
     "goal": "Track requirement verification status, evidence, owners, and closure risk in a reviewer-friendly dashboard.",
@@ -306,14 +306,14 @@
       }
     ],
     "todos": [
-      { "task": "Design the verification status data model", "status": "planned" },
-      { "task": "Create requirement-to-evidence sample data", "status": "planned" },
-      { "task": "Implement subsystem and method readiness metrics", "status": "planned" },
-      { "task": "Render a static dashboard or HTML report", "status": "planned" },
-      { "task": "Add tests for missing or inconsistent evidence", "status": "planned" },
+      { "task": "Design the verification status data model", "status": "done" },
+      { "task": "Create requirement-to-evidence sample data", "status": "done" },
+      { "task": "Implement subsystem and method readiness metrics", "status": "done" },
+      { "task": "Render a static dashboard or HTML report", "status": "done" },
+      { "task": "Add tests for missing or inconsistent evidence", "status": "done" },
       { "task": "Prepare screenshots for the README", "status": "planned" },
-      { "task": "Document update workflow for new verification cases", "status": "planned" },
-      { "task": "Publish and push the repository", "status": "planned" }
+      { "task": "Document update workflow for new verification cases", "status": "done" },
+      { "task": "Publish and push the repository", "status": "done" }
     ],
     "deliverables": [
       "Verification tracking dataset",
@@ -486,4 +486,3 @@
     ]
   }
 ]
-

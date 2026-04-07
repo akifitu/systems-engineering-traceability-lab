@@ -5,13 +5,13 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 ## Portfolio Summary
 
 - Total projects: 6
-- Built projects: 1
-- Planned projects: 5
+- Built projects: 2
+- Planned projects: 4
 
 ## Recommended Build Order
 
 1. Requirements Traceability Lab (`systems-engineering-traceability-lab`, status: built, duration: 1-2 weeks)
-2. Verification Readiness Dashboard (`verification-readiness-dashboard`, status: planned, duration: 2-3 weeks)
+2. Verification Readiness Dashboard (`verification-readiness-dashboard`, status: built, duration: 2-3 weeks)
 3. Interface Control Toolkit (`interface-control-toolkit`, status: planned, duration: 1-2 weeks)
 4. Trade Study Engine (`trade-study-engine`, status: planned, duration: 2-3 weeks)
 5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: planned, duration: 2-3 weeks)
@@ -72,7 +72,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 - Goal: Track requirement verification status, evidence, owners, and closure risk in a reviewer-friendly dashboard.
 - Suggested repository name: `verification-readiness-dashboard`
-- Current status: `planned`
+- Current status: `built`
 - Estimated duration: 2-3 weeks
 - Recommended stack: Python, CSV, HTML, GitHub Pages
 - Skills demonstrated: verification and validation, status accounting, evidence management, dashboard reporting
@@ -102,14 +102,14 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ### To-do checklist
 
-- [ ] Design the verification status data model
-- [ ] Create requirement-to-evidence sample data
-- [ ] Implement subsystem and method readiness metrics
-- [ ] Render a static dashboard or HTML report
-- [ ] Add tests for missing or inconsistent evidence
+- [x] Design the verification status data model
+- [x] Create requirement-to-evidence sample data
+- [x] Implement subsystem and method readiness metrics
+- [x] Render a static dashboard or HTML report
+- [x] Add tests for missing or inconsistent evidence
 - [ ] Prepare screenshots for the README
-- [ ] Document update workflow for new verification cases
-- [ ] Publish and push the repository
+- [x] Document update workflow for new verification cases
+- [x] Publish and push the repository
 
 ### Expected deliverables
 
