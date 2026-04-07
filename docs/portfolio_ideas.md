@@ -94,6 +94,33 @@ Skills shown:
 - configuration management
 - portfolio scaling
 
+## 11. MBSE Model Registry
+
+Create a repository that catalogs model packages, architecture views, and repository allocations to add an explicit MBSE layer to the portfolio.
+
+Skills shown:
+- MBSE thinking
+- architecture decomposition
+- repository allocation
+
+## 12. Release Readiness Command Center
+
+Create a governance repository that tracks which portfolio repos are actually release-ready, blocked, or still missing documentation and demos.
+
+Skills shown:
+- release governance
+- blocker tracking
+- publication readiness
+
+## 13. Federated MBSE Ecosystem
+
+Create the top-most ecosystem repo that links the program-office hub, the MBSE model registry, and the release-governance hub into one layered umbrella.
+
+Skills shown:
+- ecosystem architecture
+- nested submodule topology
+- multi-viewpoint portfolio scaling
+
 ## Recommended Build Order
 
 1. Requirements Traceability Lab
@@ -106,8 +133,11 @@ Skills shown:
 8. Program Risk Board
 9. Ops Concept Simulator
 10. Autonomous Disaster Response Program Office
+11. MBSE Model Registry
+12. Release Readiness Command Center
+13. Federated MBSE Ecosystem
 
-The first project is implemented in this repository, the intermediate and umbrella repos are now live, and the biggest program-office layer is live too:
+The first project is implemented in this repository, the umbrella layers are live, and the new ecosystem layer is live too:
 
 - `https://github.com/akifitu/verification-readiness-dashboard`
 - `https://github.com/akifitu/interface-control-toolkit`
@@ -118,6 +148,9 @@ The first project is implemented in this repository, the intermediate and umbrel
 - `https://github.com/akifitu/program-risk-board`
 - `https://github.com/akifitu/ops-concept-simulator`
 - `https://github.com/akifitu/autonomous-disaster-response-program-office`
+- `https://github.com/akifitu/mbse-model-registry`
+- `https://github.com/akifitu/release-readiness-command-center`
+- `https://github.com/akifitu/federated-mbse-ecosystem`
 
 ## Where The Step-By-Step Plans Live
 

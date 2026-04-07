@@ -810,5 +810,249 @@
       "HTML topology dashboard",
       "Public mega-scale systems engineering repository"
     ]
+  },
+  {
+    "id": "PORT-011",
+    "slug": "mbse-model-registry",
+    "title": "MBSE Model Registry",
+    "repo_name": "mbse-model-registry",
+    "status": "built",
+    "build_order": 11,
+    "duration_weeks": "1-2",
+    "goal": "Catalog model packages, architecture views, and repository allocations so the portfolio shows an explicit MBSE and architecture-governance layer.",
+    "skills": [
+      "MBSE thinking",
+      "architecture decomposition",
+      "view management",
+      "repository allocation"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "HTML"
+    ],
+    "phases": [
+      {
+        "name": "Define the modeling scope",
+        "steps": [
+          "Choose which architecture domains need model packages.",
+          "Decide which view types should be represented.",
+          "Map packages to the repositories they inform."
+        ]
+      },
+      {
+        "name": "Build the package dataset",
+        "steps": [
+          "Store package IDs, domains, and view types in machine-readable form.",
+          "Link each package to related repositories.",
+          "Capture requirement and interface coverage counts."
+        ]
+      },
+      {
+        "name": "Implement the registry",
+        "steps": [
+          "Validate package structure and required fields.",
+          "Roll up repository coverage across model packages.",
+          "Export a catalog and dashboard for reviewers."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for empty view lists and malformed records.",
+          "Check that coverage counts match the source data.",
+          "Fix any exporter gaps."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write MBSE-oriented documentation.",
+          "Commit generated artifacts for reviewers.",
+          "Push the public repository and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Define the model package schema", "status": "done" },
+      { "task": "Create a realistic architecture-view dataset", "status": "done" },
+      { "task": "Implement validation and exporter logic", "status": "done" },
+      { "task": "Add regression tests", "status": "done" },
+      { "task": "Generate catalog and coverage reports", "status": "done" },
+      { "task": "Link the ecosystem repo into model coverage", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Model package dataset",
+      "Architecture-view catalog",
+      "Repository coverage report",
+      "HTML model dashboard",
+      "Public MBSE-focused repository"
+    ]
+  },
+  {
+    "id": "PORT-012",
+    "slug": "release-readiness-command-center",
+    "title": "Release Readiness Command Center",
+    "repo_name": "release-readiness-command-center",
+    "status": "built",
+    "build_order": 12,
+    "duration_weeks": "1-2",
+    "goal": "Track which portfolio repositories are actually publishable by capturing release gates, blockers, CI state, documentation readiness, and demo readiness.",
+    "skills": [
+      "release governance",
+      "blocker tracking",
+      "portfolio operations",
+      "publication readiness"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "HTML"
+    ],
+    "phases": [
+      {
+        "name": "Define readiness criteria",
+        "steps": [
+          "Choose which publication gates matter.",
+          "Define what counts as ready, needs work, or blocked.",
+          "Decide how blockers will be stored."
+        ]
+      },
+      {
+        "name": "Build the readiness dataset",
+        "steps": [
+          "Create one record per repository.",
+          "Capture CI, docs, demo, license, and automation states.",
+          "Record blockers explicitly for non-ready repos."
+        ]
+      },
+      {
+        "name": "Implement the command center",
+        "steps": [
+          "Validate allowed statuses.",
+          "Roll up readiness counts across repositories.",
+          "Export repo-level and blocker-level artifacts."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for invalid CI states and malformed blockers.",
+          "Check summary counts against the source data.",
+          "Fix reporting gaps until the repo builds cleanly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write clear governance-focused docs.",
+          "Commit generated outputs for inspection.",
+          "Push publicly and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Define the release-readiness schema", "status": "done" },
+      { "task": "Build a realistic portfolio readiness dataset", "status": "done" },
+      { "task": "Implement validation and exporter logic", "status": "done" },
+      { "task": "Add regression tests", "status": "done" },
+      { "task": "Generate readiness and blocker reports", "status": "done" },
+      { "task": "Mark the ecosystem release as ready after publication", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Release-readiness dataset",
+      "Repo readiness matrix",
+      "Blocker register",
+      "HTML release dashboard",
+      "Public release-governance repository"
+    ]
+  },
+  {
+    "id": "PORT-013",
+    "slug": "federated-mbse-ecosystem",
+    "title": "Federated MBSE Ecosystem",
+    "repo_name": "federated-mbse-ecosystem",
+    "status": "built",
+    "build_order": 13,
+    "duration_weeks": "2-4",
+    "goal": "Create the largest umbrella in the portfolio by combining a program-office hub, an MBSE model registry hub, and a release-governance hub into one layered ecosystem.",
+    "skills": [
+      "ecosystem architecture",
+      "nested configuration control",
+      "MBSE portfolio structure",
+      "multi-level submodule topology"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "HTML",
+      "Git submodules",
+      "GitHub Actions"
+    ],
+    "phases": [
+      {
+        "name": "Select the ecosystem concept",
+        "steps": [
+          "Compare enterprise-scale umbrella ideas.",
+          "Choose one that supports multiple direct hubs and nested descendants.",
+          "Document the selection logic."
+        ]
+      },
+      {
+        "name": "Build the hub layer",
+        "steps": [
+          "Reuse the program-office hub.",
+          "Create MBSE and release-governance hubs as separate repos.",
+          "Define the ecosystem manifest."
+        ]
+      },
+      {
+        "name": "Implement ecosystem automation",
+        "steps": [
+          "Validate direct hub registration.",
+          "Count descendants recursively through nested `.gitmodules` files.",
+          "Export ecosystem-level summary artifacts."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for missing fields and topology mismatches.",
+          "Initialize nested submodules recursively.",
+          "Fix validation gaps until the ecosystem builds cleanly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write architecture and recruiter guidance docs.",
+          "Commit generated outputs and topology summaries.",
+          "Push publicly and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Select the ecosystem theme", "status": "done" },
+      { "task": "Create MBSE and release-governance hubs", "status": "done" },
+      { "task": "Build the ecosystem validator and exporter", "status": "done" },
+      { "task": "Add all direct hubs as submodules", "status": "done" },
+      { "task": "Initialize and validate nested descendants recursively", "status": "done" },
+      { "task": "Generate ecosystem reports", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Ecosystem hub manifest",
+      "Recursive topology validator",
+      "Layered submodule inventory",
+      "HTML ecosystem dashboard",
+      "Public ecosystem-scale systems engineering repository"
+    ]
   }
 ]

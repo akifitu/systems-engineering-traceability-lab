@@ -4,8 +4,8 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ## Portfolio Summary
 
-- Total projects: 10
-- Built projects: 10
+- Total projects: 13
+- Built projects: 13
 - Planned projects: 0
 
 ## Recommended Build Order
@@ -20,6 +20,9 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 8. Program Risk Board (`program-risk-board`, status: built, duration: 1-2 weeks)
 9. Ops Concept Simulator (`ops-concept-simulator`, status: built, duration: 1-2 weeks)
 10. Autonomous Disaster Response Program Office (`autonomous-disaster-response-program-office`, status: built, duration: 2-4 weeks)
+11. MBSE Model Registry (`mbse-model-registry`, status: built, duration: 1-2 weeks)
+12. Release Readiness Command Center (`release-readiness-command-center`, status: built, duration: 1-2 weeks)
+13. Federated MBSE Ecosystem (`federated-mbse-ecosystem`, status: built, duration: 2-4 weeks)
 
 ## 1. Requirements Traceability Lab
 
@@ -530,3 +533,156 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 - Office-level validation CLI
 - HTML topology dashboard
 - Public mega-scale systems engineering repository
+
+## 11. MBSE Model Registry
+
+- Goal: Catalog model packages, architecture views, and repository allocations so the portfolio shows an explicit MBSE and architecture-governance layer.
+- Suggested repository name: `mbse-model-registry`
+- Current status: `built`
+- Estimated duration: 1-2 weeks
+- Recommended stack: Python, JSON, CSV, HTML
+- Skills demonstrated: MBSE thinking, architecture decomposition, view management, repository allocation
+
+### Step-by-step plan
+
+1. Define the modeling scope
+   - Choose which architecture domains need model packages.
+   - Decide which view types should be represented.
+   - Map packages to the repositories they inform.
+2. Build the package dataset
+   - Store package IDs, domains, and view types in machine-readable form.
+   - Link each package to related repositories.
+   - Capture requirement and interface coverage counts.
+3. Implement the registry
+   - Validate package structure and required fields.
+   - Roll up repository coverage across model packages.
+   - Export a catalog and dashboard for reviewers.
+4. Debug and verify
+   - Add tests for empty view lists and malformed records.
+   - Check that coverage counts match the source data.
+   - Fix any exporter gaps.
+5. Publish professionally
+   - Write MBSE-oriented documentation.
+   - Commit generated artifacts for reviewers.
+   - Push the public repository and add GitHub topics.
+
+### To-do checklist
+
+- [x] Define the model package schema
+- [x] Create a realistic architecture-view dataset
+- [x] Implement validation and exporter logic
+- [x] Add regression tests
+- [x] Generate catalog and coverage reports
+- [x] Link the ecosystem repo into model coverage
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Model package dataset
+- Architecture-view catalog
+- Repository coverage report
+- HTML model dashboard
+- Public MBSE-focused repository
+
+## 12. Release Readiness Command Center
+
+- Goal: Track which portfolio repositories are actually publishable by capturing release gates, blockers, CI state, documentation readiness, and demo readiness.
+- Suggested repository name: `release-readiness-command-center`
+- Current status: `built`
+- Estimated duration: 1-2 weeks
+- Recommended stack: Python, JSON, CSV, HTML
+- Skills demonstrated: release governance, blocker tracking, portfolio operations, publication readiness
+
+### Step-by-step plan
+
+1. Define readiness criteria
+   - Choose which publication gates matter.
+   - Define what counts as ready, needs work, or blocked.
+   - Decide how blockers will be stored.
+2. Build the readiness dataset
+   - Create one record per repository.
+   - Capture CI, docs, demo, license, and automation states.
+   - Record blockers explicitly for non-ready repos.
+3. Implement the command center
+   - Validate allowed statuses.
+   - Roll up readiness counts across repositories.
+   - Export repo-level and blocker-level artifacts.
+4. Debug and verify
+   - Add tests for invalid CI states and malformed blockers.
+   - Check summary counts against the source data.
+   - Fix reporting gaps until the repo builds cleanly.
+5. Publish professionally
+   - Write clear governance-focused docs.
+   - Commit generated outputs for inspection.
+   - Push publicly and add GitHub topics.
+
+### To-do checklist
+
+- [x] Define the release-readiness schema
+- [x] Build a realistic portfolio readiness dataset
+- [x] Implement validation and exporter logic
+- [x] Add regression tests
+- [x] Generate readiness and blocker reports
+- [x] Mark the ecosystem release as ready after publication
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Release-readiness dataset
+- Repo readiness matrix
+- Blocker register
+- HTML release dashboard
+- Public release-governance repository
+
+## 13. Federated MBSE Ecosystem
+
+- Goal: Create the largest umbrella in the portfolio by combining a program-office hub, an MBSE model registry hub, and a release-governance hub into one layered ecosystem.
+- Suggested repository name: `federated-mbse-ecosystem`
+- Current status: `built`
+- Estimated duration: 2-4 weeks
+- Recommended stack: Python, JSON, HTML, Git submodules, GitHub Actions
+- Skills demonstrated: ecosystem architecture, nested configuration control, MBSE portfolio structure, multi-level submodule topology
+
+### Step-by-step plan
+
+1. Select the ecosystem concept
+   - Compare enterprise-scale umbrella ideas.
+   - Choose one that supports multiple direct hubs and nested descendants.
+   - Document the selection logic.
+2. Build the hub layer
+   - Reuse the program-office hub.
+   - Create MBSE and release-governance hubs as separate repos.
+   - Define the ecosystem manifest.
+3. Implement ecosystem automation
+   - Validate direct hub registration.
+   - Count descendants recursively through nested `.gitmodules` files.
+   - Export ecosystem-level summary artifacts.
+4. Debug and verify
+   - Add tests for missing fields and topology mismatches.
+   - Initialize nested submodules recursively.
+   - Fix validation gaps until the ecosystem builds cleanly.
+5. Publish professionally
+   - Write architecture and recruiter guidance docs.
+   - Commit generated outputs and topology summaries.
+   - Push publicly and add GitHub topics.
+
+### To-do checklist
+
+- [x] Select the ecosystem theme
+- [x] Create MBSE and release-governance hubs
+- [x] Build the ecosystem validator and exporter
+- [x] Add all direct hubs as submodules
+- [x] Initialize and validate nested descendants recursively
+- [x] Generate ecosystem reports
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Ecosystem hub manifest
+- Recursive topology validator
+- Layered submodule inventory
+- HTML ecosystem dashboard
+- Public ecosystem-scale systems engineering repository
