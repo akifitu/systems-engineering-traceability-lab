@@ -1,0 +1,43 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" rx="24" fill="#08111F"/>
+  <rect x="28" y="28" width="1144" height="544" rx="20" fill="#0F172A" stroke="#334155"/>
+  <text x="64" y="86" fill="#F8FAFC" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif">TRACEABILITY AUDIT</text>
+  <text x="64" y="124" fill="#94A3B8" font-size="20" font-family="Segoe UI, Arial, sans-serif">Requirement flow, interface checks, and verification linkage.</text>
+  <rect x="64" y="164" width="270" height="86" rx="18" fill="#111827"/>
+  <text x="88" y="202" fill="#94A3B8" font-size="18" font-family="Segoe UI, Arial, sans-serif">Coverage</text>
+  <text x="88" y="234" fill="#F8FAFC" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif">100%</text>
+  <rect x="64" y="282" width="380" height="18" rx="9" fill="#1E293B"/>
+  <rect x="64" y="282" width="120" height="18" rx="9" fill="#14B8A6">
+    <animate attributeName="width" values="120;300;360;320;380" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <g stroke="#38BDF8" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <path d="M700 180L850 136">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M700 180L760 294">
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M850 136L980 204">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M760 294L904 326">
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M904 326L1032 282">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M904 326L862 458">
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#14B8A6">
+    <circle cx="700" cy="180" r="14"><animate attributeName="r" values="14;18;14" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="136" r="14"><animate attributeName="r" values="14;18;14" dur="2s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="204" r="14"><animate attributeName="r" values="14;18;14" dur="2s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="294" r="14"><animate attributeName="r" values="14;18;14" dur="2s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="904" cy="326" r="14"><animate attributeName="r" values="14;18;14" dur="2s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1032" cy="282" r="14"><animate attributeName="r" values="14;18;14" dur="2s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="862" cy="458" r="14"><animate attributeName="r" values="14;18;14" dur="2s" begin="1.8s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="690" y="536" fill="#CBD5E1" font-size="18" font-family="Segoe UI, Arial, sans-serif">Need -> System Req -> Subsystem Req -> Verification</text>
+</svg>

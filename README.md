@@ -18,7 +18,7 @@ The flagship case study models an **Autonomous Wildfire Detection Drone System**
 ## Demo Preview
 
 <p align="center">
-  <img src="./docs/assets/demo.gif" alt="Systems Engineering Traceability Lab demo gif" width="100%" />
+  <img src="./docs/assets/demo.svg" alt="Systems Engineering Traceability Lab demo animation" width="100%" />
 </p>
 
 ## Portfolio Project Ideas

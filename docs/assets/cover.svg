@@ -1,0 +1,33 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="48" y1="44" x2="1224" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09111F"/>
+      <stop offset="1" stop-color="#103B3B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1046 112) rotate(90) scale(236 280)">
+      <stop stop-color="#14B8A6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(244 648) rotate(90) scale(190 320)">
+      <stop stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" rx="30" fill="url(#bg)"/>
+  <rect width="1280" height="720" rx="30" fill="url(#grid)"/>
+  <ellipse cx="1046" cy="112" rx="280" ry="236" fill="url(#glow)"/>
+  <ellipse cx="244" cy="648" rx="320" ry="190" fill="url(#glow2)"/>
+  <rect x="56" y="54" width="560" height="612" rx="28" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="92" y="112" fill="#CBD5E1" font-size="24" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Portfolio-ready systems engineering automation</text>
+  <text x="92" y="176" fill="#F8FAFC" font-size="58" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Systems Engineering</text><text x="92" y="238" fill="#F8FAFC" font-size="58" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Traceability Lab</text>
+  <text x="92" y="320" fill="#CBD5E1" font-size="24" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Requirements, interfaces, risks, verification linkage, and generated audit outputs.</text>
+  <rect x="92" y="352" width="125" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.16"/><text x="112" y="377" fill="#E2E8F0" font-size="18" font-weight="600" font-family="Segoe UI, Arial, sans-serif">REQ TRACE</text><rect x="231" y="352" width="136" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.16"/><text x="251" y="377" fill="#E2E8F0" font-size="18" font-weight="600" font-family="Segoe UI, Arial, sans-serif">ICD CHECKS</text><rect x="381" y="352" width="158" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.16"/><text x="401" y="377" fill="#E2E8F0" font-size="18" font-weight="600" font-family="Segoe UI, Arial, sans-serif">RISK LINKAGE</text>
+  <rect x="92" y="450" width="154" height="98" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/><text x="112" y="488" fill="#94A3B8" font-size="17" font-weight="600" font-family="Segoe UI, Arial, sans-serif">FOCUS</text><text x="112" y="530" fill="#FFFFFF" font-size="29" font-weight="700" font-family="Segoe UI, Arial, sans-serif">TRACEABILITY</text><rect x="262" y="450" width="154" height="98" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/><text x="282" y="488" fill="#94A3B8" font-size="17" font-weight="600" font-family="Segoe UI, Arial, sans-serif">OUTPUT</text><text x="282" y="530" fill="#FFFFFF" font-size="29" font-weight="700" font-family="Segoe UI, Arial, sans-serif">AUDIT READY</text><rect x="432" y="450" width="154" height="98" rx="22" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.14"/><text x="452" y="488" fill="#94A3B8" font-size="17" font-weight="600" font-family="Segoe UI, Arial, sans-serif">STACK</text><text x="452" y="530" fill="#FFFFFF" font-size="29" font-weight="700" font-family="Segoe UI, Arial, sans-serif">PYTHON + CI</text>
+  <rect x="664" y="54" width="560" height="612" rx="28" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="706" y="106" fill="#E2E8F0" font-size="22" font-weight="600" font-family="Consolas, Menlo, monospace">portfolio.view()</text>
+  <text x="706" y="140" fill="#94A3B8" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Structured technical showcase designed for GitHub review.</text>
+  <path d="M760 250L900 210" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M900 210L1045 260" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M760 250L820 370" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M900 210L960 380" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M1045 260L1100 340" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M820 370L960 380" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M960 380L1100 340" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><path d="M960 380L900 500" stroke="#38BDF8" stroke-opacity="0.72" stroke-width="4"/><circle cx="760" cy="250" r="12" fill="#14B8A6"/><circle cx="760" cy="250" r="24" fill="#14B8A6" fill-opacity="0.12"/><circle cx="900" cy="210" r="12" fill="#14B8A6"/><circle cx="900" cy="210" r="24" fill="#14B8A6" fill-opacity="0.12"/><circle cx="1045" cy="260" r="12" fill="#14B8A6"/><circle cx="1045" cy="260" r="24" fill="#14B8A6" fill-opacity="0.12"/><circle cx="820" cy="370" r="12" fill="#14B8A6"/><circle cx="820" cy="370" r="24" fill="#14B8A6" fill-opacity="0.12"/><circle cx="960" cy="380" r="12" fill="#14B8A6"/><circle cx="960" cy="380" r="24" fill="#14B8A6" fill-opacity="0.12"/><circle cx="1100" cy="340" r="12" fill="#14B8A6"/><circle cx="1100" cy="340" r="24" fill="#14B8A6" fill-opacity="0.12"/><circle cx="900" cy="500" r="12" fill="#14B8A6"/><circle cx="900" cy="500" r="24" fill="#14B8A6" fill-opacity="0.12"/><rect x="736" y="446" width="404" height="118" rx="22" fill="#0F172A" fill-opacity="0.36" stroke="#FFFFFF" stroke-opacity="0.08"/><text x="770" y="488" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">REQUIREMENT TO TEST CHAIN</text><text x="770" y="528" fill="#94A3B8" font-size="18" font-weight="500" font-family="Segoe UI, Arial, sans-serif">Need -> System Req -> Subsystem Req -> Verification Case</text>
+</svg>
