@@ -328,7 +328,7 @@
     "slug": "trade-study-engine",
     "title": "Trade Study Engine",
     "repo_name": "trade-study-engine",
-    "status": "planned",
+    "status": "built",
     "build_order": 4,
     "duration_weeks": "2-3",
     "goal": "Compare architecture options against weighted decision criteria and make trade study logic reproducible.",
@@ -387,14 +387,14 @@
       }
     ],
     "todos": [
-      { "task": "Choose a concrete architecture decision to analyze", "status": "planned" },
-      { "task": "Define alternatives and weighted criteria", "status": "planned" },
-      { "task": "Store scoring inputs in structured files", "status": "planned" },
-      { "task": "Implement weighted ranking and what-if analysis", "status": "planned" },
-      { "task": "Generate comparison tables and charts", "status": "planned" },
-      { "task": "Test score normalization and ranking changes", "status": "planned" },
-      { "task": "Write a technical decision narrative", "status": "planned" },
-      { "task": "Publish and push the repository", "status": "planned" }
+      { "task": "Choose a concrete architecture decision to analyze", "status": "done" },
+      { "task": "Define alternatives and weighted criteria", "status": "done" },
+      { "task": "Store scoring inputs in structured files", "status": "done" },
+      { "task": "Implement weighted ranking and what-if analysis", "status": "done" },
+      { "task": "Generate comparison tables and charts", "status": "done" },
+      { "task": "Test score normalization and ranking changes", "status": "done" },
+      { "task": "Write a technical decision narrative", "status": "done" },
+      { "task": "Publish and push the repository", "status": "done" }
     ],
     "deliverables": [
       "Trade study dataset",

@@ -5,15 +5,15 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 ## Portfolio Summary
 
 - Total projects: 6
-- Built projects: 3
-- Planned projects: 3
+- Built projects: 4
+- Planned projects: 2
 
 ## Recommended Build Order
 
 1. Requirements Traceability Lab (`systems-engineering-traceability-lab`, status: built, duration: 1-2 weeks)
 2. Verification Readiness Dashboard (`verification-readiness-dashboard`, status: built, duration: 2-3 weeks)
 3. Interface Control Toolkit (`interface-control-toolkit`, status: built, duration: 1-2 weeks)
-4. Trade Study Engine (`trade-study-engine`, status: planned, duration: 2-3 weeks)
+4. Trade Study Engine (`trade-study-engine`, status: built, duration: 2-3 weeks)
 5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: planned, duration: 2-3 weeks)
 6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: planned, duration: 2-3 weeks)
 
@@ -174,7 +174,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 - Goal: Compare architecture options against weighted decision criteria and make trade study logic reproducible.
 - Suggested repository name: `trade-study-engine`
-- Current status: `planned`
+- Current status: `built`
 - Estimated duration: 2-3 weeks
 - Recommended stack: Python, CSV, Markdown, Plots
 - Skills demonstrated: trade studies, decision analysis, architecture evaluation, sensitivity analysis
@@ -204,14 +204,14 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ### To-do checklist
 
-- [ ] Choose a concrete architecture decision to analyze
-- [ ] Define alternatives and weighted criteria
-- [ ] Store scoring inputs in structured files
-- [ ] Implement weighted ranking and what-if analysis
-- [ ] Generate comparison tables and charts
-- [ ] Test score normalization and ranking changes
-- [ ] Write a technical decision narrative
-- [ ] Publish and push the repository
+- [x] Choose a concrete architecture decision to analyze
+- [x] Define alternatives and weighted criteria
+- [x] Store scoring inputs in structured files
+- [x] Implement weighted ranking and what-if analysis
+- [x] Generate comparison tables and charts
+- [x] Test score normalization and ranking changes
+- [x] Write a technical decision narrative
+- [x] Publish and push the repository
 
 ### Expected deliverables
 
