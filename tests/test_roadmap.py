@@ -29,7 +29,7 @@ class RoadmapTests(unittest.TestCase):
         content = render_portfolio_roadmap(filter_projects(load_portfolio_projects(PROJECTS_FILE)))
         self.assertIn("## 1. Requirements Traceability Lab", content)
         self.assertIn("- [x] Implement the audit CLI and report exporter", content)
-        self.assertIn("- [ ] Choose a reference satellite mission and orbit", content)
+        self.assertIn("- [x] Choose a reference satellite mission and orbit", content)
 
     def test_cli_exports_single_project_roadmap(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:

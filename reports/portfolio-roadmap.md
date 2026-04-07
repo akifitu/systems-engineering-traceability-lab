@@ -5,8 +5,8 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 ## Portfolio Summary
 
 - Total projects: 6
-- Built projects: 5
-- Planned projects: 1
+- Built projects: 6
+- Planned projects: 0
 
 ## Recommended Build Order
 
@@ -15,7 +15,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 3. Interface Control Toolkit (`interface-control-toolkit`, status: built, duration: 1-2 weeks)
 4. Trade Study Engine (`trade-study-engine`, status: built, duration: 2-3 weeks)
 5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: built, duration: 2-3 weeks)
-6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: planned, duration: 2-3 weeks)
+6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: built, duration: 2-3 weeks)
 
 ## 1. Requirements Traceability Lab
 
@@ -276,7 +276,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 - Goal: Simulate solar generation, eclipse losses, battery usage, and subsystem loads across orbital mission phases.
 - Suggested repository name: `satellite-power-budget-simulator`
-- Current status: `planned`
+- Current status: `built`
 - Estimated duration: 2-3 weeks
 - Recommended stack: Python, CSV, Matplotlib, Jupyter
 - Skills demonstrated: mission analysis, energy budgeting, scenario modeling, engineering visualization
@@ -306,14 +306,14 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ### To-do checklist
 
-- [ ] Choose a reference satellite mission and orbit
-- [ ] Create sunlight and eclipse load-case assumptions
-- [ ] Model solar array and battery parameters
-- [ ] Implement orbit-by-orbit energy balance simulation
-- [ ] Add plots for state of charge and power margins
-- [ ] Validate the model against hand calculations
-- [ ] Write a technical README and scenario guide
-- [ ] Publish example results and push the repo
+- [x] Choose a reference satellite mission and orbit
+- [x] Create sunlight and eclipse load-case assumptions
+- [x] Model solar array and battery parameters
+- [x] Implement orbit-by-orbit energy balance simulation
+- [x] Add plots for state of charge and power margins
+- [x] Validate the model against hand calculations
+- [x] Write a technical README and scenario guide
+- [x] Publish example results and push the repo
 
 ### Expected deliverables
 

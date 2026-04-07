@@ -85,7 +85,7 @@
     "slug": "satellite-power-budget-simulator",
     "title": "Satellite Power Budget Simulator",
     "repo_name": "satellite-power-budget-simulator",
-    "status": "planned",
+    "status": "built",
     "build_order": 6,
     "duration_weeks": "2-3",
     "goal": "Simulate solar generation, eclipse losses, battery usage, and subsystem loads across orbital mission phases.",
@@ -144,14 +144,14 @@
       }
     ],
     "todos": [
-      { "task": "Choose a reference satellite mission and orbit", "status": "planned" },
-      { "task": "Create sunlight and eclipse load-case assumptions", "status": "planned" },
-      { "task": "Model solar array and battery parameters", "status": "planned" },
-      { "task": "Implement orbit-by-orbit energy balance simulation", "status": "planned" },
-      { "task": "Add plots for state of charge and power margins", "status": "planned" },
-      { "task": "Validate the model against hand calculations", "status": "planned" },
-      { "task": "Write a technical README and scenario guide", "status": "planned" },
-      { "task": "Publish example results and push the repo", "status": "planned" }
+      { "task": "Choose a reference satellite mission and orbit", "status": "done" },
+      { "task": "Create sunlight and eclipse load-case assumptions", "status": "done" },
+      { "task": "Model solar array and battery parameters", "status": "done" },
+      { "task": "Implement orbit-by-orbit energy balance simulation", "status": "done" },
+      { "task": "Add plots for state of charge and power margins", "status": "done" },
+      { "task": "Validate the model against hand calculations", "status": "done" },
+      { "task": "Write a technical README and scenario guide", "status": "done" },
+      { "task": "Publish example results and push the repo", "status": "done" }
     ],
     "deliverables": [
       "Configurable mission power model",
