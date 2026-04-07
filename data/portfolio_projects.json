@@ -409,7 +409,7 @@
     "slug": "fmea-reliability-workbench",
     "title": "FMEA and Reliability Workbench",
     "repo_name": "fmea-reliability-workbench",
-    "status": "planned",
+    "status": "built",
     "build_order": 5,
     "duration_weeks": "2-3",
     "goal": "Connect failure modes, causes, effects, controls, and residual risk into a structured engineering analysis workspace.",
@@ -468,14 +468,14 @@
       }
     ],
     "todos": [
-      { "task": "Select the system or subsystem to analyze", "status": "planned" },
-      { "task": "Define severity, occurrence, and detection scales", "status": "planned" },
-      { "task": "Model failure modes, causes, effects, and controls", "status": "planned" },
-      { "task": "Implement risk-priority calculations and reports", "status": "planned" },
-      { "task": "Trace mitigations to functions or requirements", "status": "planned" },
-      { "task": "Add tests for invalid scores and missing controls", "status": "planned" },
-      { "task": "Write a review-ready README and sample report", "status": "planned" },
-      { "task": "Publish and push the repository", "status": "planned" }
+      { "task": "Select the system or subsystem to analyze", "status": "done" },
+      { "task": "Define severity, occurrence, and detection scales", "status": "done" },
+      { "task": "Model failure modes, causes, effects, and controls", "status": "done" },
+      { "task": "Implement risk-priority calculations and reports", "status": "done" },
+      { "task": "Trace mitigations to functions or requirements", "status": "done" },
+      { "task": "Add tests for invalid scores and missing controls", "status": "done" },
+      { "task": "Write a review-ready README and sample report", "status": "done" },
+      { "task": "Publish and push the repository", "status": "done" }
     ],
     "deliverables": [
       "Structured FMEA dataset",

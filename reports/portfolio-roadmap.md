@@ -5,8 +5,8 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 ## Portfolio Summary
 
 - Total projects: 6
-- Built projects: 4
-- Planned projects: 2
+- Built projects: 5
+- Planned projects: 1
 
 ## Recommended Build Order
 
@@ -14,7 +14,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 2. Verification Readiness Dashboard (`verification-readiness-dashboard`, status: built, duration: 2-3 weeks)
 3. Interface Control Toolkit (`interface-control-toolkit`, status: built, duration: 1-2 weeks)
 4. Trade Study Engine (`trade-study-engine`, status: built, duration: 2-3 weeks)
-5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: planned, duration: 2-3 weeks)
+5. FMEA and Reliability Workbench (`fmea-reliability-workbench`, status: built, duration: 2-3 weeks)
 6. Satellite Power Budget Simulator (`satellite-power-budget-simulator`, status: planned, duration: 2-3 weeks)
 
 ## 1. Requirements Traceability Lab
@@ -225,7 +225,7 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 - Goal: Connect failure modes, causes, effects, controls, and residual risk into a structured engineering analysis workspace.
 - Suggested repository name: `fmea-reliability-workbench`
-- Current status: `planned`
+- Current status: `built`
 - Estimated duration: 2-3 weeks
 - Recommended stack: Python, JSON, CSV, Markdown
 - Skills demonstrated: reliability engineering, hazard analysis, risk reduction, mitigation tracking
@@ -255,14 +255,14 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ### To-do checklist
 
-- [ ] Select the system or subsystem to analyze
-- [ ] Define severity, occurrence, and detection scales
-- [ ] Model failure modes, causes, effects, and controls
-- [ ] Implement risk-priority calculations and reports
-- [ ] Trace mitigations to functions or requirements
-- [ ] Add tests for invalid scores and missing controls
-- [ ] Write a review-ready README and sample report
-- [ ] Publish and push the repository
+- [x] Select the system or subsystem to analyze
+- [x] Define severity, occurrence, and detection scales
+- [x] Model failure modes, causes, effects, and controls
+- [x] Implement risk-priority calculations and reports
+- [x] Trace mitigations to functions or requirements
+- [x] Add tests for invalid scores and missing controls
+- [x] Write a review-ready README and sample report
+- [x] Publish and push the repository
 
 ### Expected deliverables
 

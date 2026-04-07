@@ -65,11 +65,12 @@ Skills shown:
 5. FMEA and Reliability Workbench
 6. Satellite Power Budget Simulator
 
-The first project is implemented in this repository, and the next three are live as separate public repos:
+The first project is implemented in this repository, and the next four are live as separate public repos:
 
 - `https://github.com/akifitu/verification-readiness-dashboard`
 - `https://github.com/akifitu/interface-control-toolkit`
 - `https://github.com/akifitu/trade-study-engine`
+- `https://github.com/akifitu/fmea-reliability-workbench`
 
 ## Where The Step-By-Step Plans Live
 
