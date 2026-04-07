@@ -4,8 +4,8 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 
 ## Portfolio Summary
 
-- Total projects: 13
-- Built projects: 13
+- Total projects: 16
+- Built projects: 16
 - Planned projects: 0
 
 ## Recommended Build Order
@@ -23,6 +23,9 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 11. MBSE Model Registry (`mbse-model-registry`, status: built, duration: 1-2 weeks)
 12. Release Readiness Command Center (`release-readiness-command-center`, status: built, duration: 1-2 weeks)
 13. Federated MBSE Ecosystem (`federated-mbse-ecosystem`, status: built, duration: 2-4 weeks)
+14. Portfolio Analytics Observatory (`portfolio-analytics-observatory`, status: built, duration: 1-2 weeks)
+15. Supplier Interface Exchange (`supplier-interface-exchange`, status: built, duration: 1-2 weeks)
+16. Autonomous Disaster Response Enterprise Platform (`autonomous-disaster-response-enterprise-platform`, status: built, duration: 2-4 weeks)
 
 ## 1. Requirements Traceability Lab
 
@@ -686,3 +689,156 @@ This document is generated from `data/portfolio_projects.json`. It gives a step-
 - Layered submodule inventory
 - HTML ecosystem dashboard
 - Public ecosystem-scale systems engineering repository
+
+## 14. Portfolio Analytics Observatory
+
+- Goal: Measure cross-repository portfolio health through structured metrics covering automation, documentation, integration depth, and layer-level maturity.
+- Suggested repository name: `portfolio-analytics-observatory`
+- Current status: `built`
+- Estimated duration: 1-2 weeks
+- Recommended stack: Python, JSON, CSV, HTML
+- Skills demonstrated: portfolio observability, engineering analytics, metrics rollups, portfolio operations
+
+### Step-by-step plan
+
+1. Define observability metrics
+   - Choose scores and states that matter across repositories.
+   - Define portfolio layers and readiness categories.
+   - Set acceptable score ranges.
+2. Build the metrics dataset
+   - Create one metric record per repository.
+   - Capture automation, documentation, and integration values.
+   - Assign each repo to a portfolio layer.
+3. Implement the observatory
+   - Validate score ranges and statuses.
+   - Roll up metrics by layer.
+   - Export reviewer-facing scorecards and dashboards.
+4. Debug and verify
+   - Add tests for invalid scores and malformed records.
+   - Check layer averages against the source data.
+   - Fix report formatting and data-quality warnings.
+5. Publish professionally
+   - Write observability-focused docs.
+   - Commit generated outputs.
+   - Push publicly and add GitHub topics.
+
+### To-do checklist
+
+- [x] Define the portfolio metric schema
+- [x] Create a realistic cross-repo dataset
+- [x] Implement validation and exporter logic
+- [x] Add regression tests
+- [x] Generate scorecards and dashboards
+- [x] Mark the enterprise platform as ready after publication
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Portfolio metric dataset
+- Repository scorecard export
+- Layer-level analytics rollup
+- HTML observability dashboard
+- Public analytics-focused repository
+
+## 15. Supplier Interface Exchange
+
+- Goal: Track supplier-facing interfaces, delivery gates, and required exchange documents so the portfolio shows external integration and delivery governance.
+- Suggested repository name: `supplier-interface-exchange`
+- Current status: `built`
+- Estimated duration: 1-2 weeks
+- Recommended stack: Python, JSON, CSV, HTML
+- Skills demonstrated: supplier coordination, external interface governance, delivery-gate tracking, integration management
+
+### Step-by-step plan
+
+1. Define supplier exchange scope
+   - Choose which external interfaces matter.
+   - Define lifecycle states and delivery gates.
+   - Decide which documents must be tracked.
+2. Build the source dataset
+   - Create one record per supplier-facing interface.
+   - Capture owning repo, protocol, and delivery gate.
+   - Record required supporting documents.
+3. Implement the exchange audit
+   - Validate statuses and required fields.
+   - Roll up coverage by delivery gate.
+   - Export supplier and gate-level reports.
+4. Debug and verify
+   - Add tests for invalid statuses and malformed document lists.
+   - Check gate counts against the source data.
+   - Fix warnings so the default dataset audits cleanly.
+5. Publish professionally
+   - Write supplier-facing docs.
+   - Commit generated outputs.
+   - Push publicly and add GitHub topics.
+
+### To-do checklist
+
+- [x] Define the supplier interface schema
+- [x] Create a realistic exchange dataset
+- [x] Implement validation and exporter logic
+- [x] Add regression tests
+- [x] Eliminate warnings in the default dataset
+- [x] Generate supplier and gate reports
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Supplier interface dataset
+- External delivery-gate rollup
+- Supplier register export
+- HTML supplier dashboard
+- Public supplier-governance repository
+
+## 16. Autonomous Disaster Response Enterprise Platform
+
+- Goal: Create the top-most enterprise umbrella in the portfolio by combining the federated ecosystem, enterprise analytics, and supplier governance hubs into one layered platform.
+- Suggested repository name: `autonomous-disaster-response-enterprise-platform`
+- Current status: `built`
+- Estimated duration: 2-4 weeks
+- Recommended stack: Python, JSON, HTML, Git submodules, GitHub Actions
+- Skills demonstrated: enterprise architecture, multi-level submodule topology, portfolio scaling, enterprise systems thinking
+
+### Step-by-step plan
+
+1. Select the enterprise concept
+   - Evaluate enterprise-scale umbrella ideas.
+   - Choose one that extends the ecosystem layer with new direct hubs.
+   - Document the selection rationale.
+2. Build the enterprise hub layer
+   - Reuse the federated ecosystem hub.
+   - Create analytics and supplier-governance hubs.
+   - Define the enterprise manifest.
+3. Implement enterprise automation
+   - Validate direct hub registration.
+   - Count descendants recursively through nested `.gitmodules` files.
+   - Export enterprise-level topology artifacts.
+4. Debug and verify
+   - Add tests for missing fields and topology mismatches.
+   - Initialize nested submodules recursively.
+   - Fix any reporting or path gaps.
+5. Publish professionally
+   - Write enterprise architecture and recruiter docs.
+   - Commit generated outputs and dashboards.
+   - Push publicly and add GitHub topics.
+
+### To-do checklist
+
+- [x] Select the enterprise theme
+- [x] Create analytics and supplier-governance hubs
+- [x] Build the enterprise validator and exporter
+- [x] Add all direct hubs as submodules
+- [x] Initialize and validate nested descendants recursively
+- [x] Generate enterprise reports
+- [x] Push the repository publicly
+- [x] Add GitHub topics and description
+
+### Expected deliverables
+
+- Enterprise hub manifest
+- Recursive enterprise topology validator
+- Hub network inventory
+- HTML enterprise dashboard
+- Public enterprise-scale systems engineering repository

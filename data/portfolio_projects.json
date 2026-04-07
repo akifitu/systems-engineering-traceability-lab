@@ -1054,5 +1054,249 @@
       "HTML ecosystem dashboard",
       "Public ecosystem-scale systems engineering repository"
     ]
+  },
+  {
+    "id": "PORT-014",
+    "slug": "portfolio-analytics-observatory",
+    "title": "Portfolio Analytics Observatory",
+    "repo_name": "portfolio-analytics-observatory",
+    "status": "built",
+    "build_order": 14,
+    "duration_weeks": "1-2",
+    "goal": "Measure cross-repository portfolio health through structured metrics covering automation, documentation, integration depth, and layer-level maturity.",
+    "skills": [
+      "portfolio observability",
+      "engineering analytics",
+      "metrics rollups",
+      "portfolio operations"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "HTML"
+    ],
+    "phases": [
+      {
+        "name": "Define observability metrics",
+        "steps": [
+          "Choose scores and states that matter across repositories.",
+          "Define portfolio layers and readiness categories.",
+          "Set acceptable score ranges."
+        ]
+      },
+      {
+        "name": "Build the metrics dataset",
+        "steps": [
+          "Create one metric record per repository.",
+          "Capture automation, documentation, and integration values.",
+          "Assign each repo to a portfolio layer."
+        ]
+      },
+      {
+        "name": "Implement the observatory",
+        "steps": [
+          "Validate score ranges and statuses.",
+          "Roll up metrics by layer.",
+          "Export reviewer-facing scorecards and dashboards."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for invalid scores and malformed records.",
+          "Check layer averages against the source data.",
+          "Fix report formatting and data-quality warnings."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write observability-focused docs.",
+          "Commit generated outputs.",
+          "Push publicly and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Define the portfolio metric schema", "status": "done" },
+      { "task": "Create a realistic cross-repo dataset", "status": "done" },
+      { "task": "Implement validation and exporter logic", "status": "done" },
+      { "task": "Add regression tests", "status": "done" },
+      { "task": "Generate scorecards and dashboards", "status": "done" },
+      { "task": "Mark the enterprise platform as ready after publication", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Portfolio metric dataset",
+      "Repository scorecard export",
+      "Layer-level analytics rollup",
+      "HTML observability dashboard",
+      "Public analytics-focused repository"
+    ]
+  },
+  {
+    "id": "PORT-015",
+    "slug": "supplier-interface-exchange",
+    "title": "Supplier Interface Exchange",
+    "repo_name": "supplier-interface-exchange",
+    "status": "built",
+    "build_order": 15,
+    "duration_weeks": "1-2",
+    "goal": "Track supplier-facing interfaces, delivery gates, and required exchange documents so the portfolio shows external integration and delivery governance.",
+    "skills": [
+      "supplier coordination",
+      "external interface governance",
+      "delivery-gate tracking",
+      "integration management"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "CSV",
+      "HTML"
+    ],
+    "phases": [
+      {
+        "name": "Define supplier exchange scope",
+        "steps": [
+          "Choose which external interfaces matter.",
+          "Define lifecycle states and delivery gates.",
+          "Decide which documents must be tracked."
+        ]
+      },
+      {
+        "name": "Build the source dataset",
+        "steps": [
+          "Create one record per supplier-facing interface.",
+          "Capture owning repo, protocol, and delivery gate.",
+          "Record required supporting documents."
+        ]
+      },
+      {
+        "name": "Implement the exchange audit",
+        "steps": [
+          "Validate statuses and required fields.",
+          "Roll up coverage by delivery gate.",
+          "Export supplier and gate-level reports."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for invalid statuses and malformed document lists.",
+          "Check gate counts against the source data.",
+          "Fix warnings so the default dataset audits cleanly."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write supplier-facing docs.",
+          "Commit generated outputs.",
+          "Push publicly and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Define the supplier interface schema", "status": "done" },
+      { "task": "Create a realistic exchange dataset", "status": "done" },
+      { "task": "Implement validation and exporter logic", "status": "done" },
+      { "task": "Add regression tests", "status": "done" },
+      { "task": "Eliminate warnings in the default dataset", "status": "done" },
+      { "task": "Generate supplier and gate reports", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Supplier interface dataset",
+      "External delivery-gate rollup",
+      "Supplier register export",
+      "HTML supplier dashboard",
+      "Public supplier-governance repository"
+    ]
+  },
+  {
+    "id": "PORT-016",
+    "slug": "autonomous-disaster-response-enterprise-platform",
+    "title": "Autonomous Disaster Response Enterprise Platform",
+    "repo_name": "autonomous-disaster-response-enterprise-platform",
+    "status": "built",
+    "build_order": 16,
+    "duration_weeks": "2-4",
+    "goal": "Create the top-most enterprise umbrella in the portfolio by combining the federated ecosystem, enterprise analytics, and supplier governance hubs into one layered platform.",
+    "skills": [
+      "enterprise architecture",
+      "multi-level submodule topology",
+      "portfolio scaling",
+      "enterprise systems thinking"
+    ],
+    "recommended_stack": [
+      "Python",
+      "JSON",
+      "HTML",
+      "Git submodules",
+      "GitHub Actions"
+    ],
+    "phases": [
+      {
+        "name": "Select the enterprise concept",
+        "steps": [
+          "Evaluate enterprise-scale umbrella ideas.",
+          "Choose one that extends the ecosystem layer with new direct hubs.",
+          "Document the selection rationale."
+        ]
+      },
+      {
+        "name": "Build the enterprise hub layer",
+        "steps": [
+          "Reuse the federated ecosystem hub.",
+          "Create analytics and supplier-governance hubs.",
+          "Define the enterprise manifest."
+        ]
+      },
+      {
+        "name": "Implement enterprise automation",
+        "steps": [
+          "Validate direct hub registration.",
+          "Count descendants recursively through nested `.gitmodules` files.",
+          "Export enterprise-level topology artifacts."
+        ]
+      },
+      {
+        "name": "Debug and verify",
+        "steps": [
+          "Add tests for missing fields and topology mismatches.",
+          "Initialize nested submodules recursively.",
+          "Fix any reporting or path gaps."
+        ]
+      },
+      {
+        "name": "Publish professionally",
+        "steps": [
+          "Write enterprise architecture and recruiter docs.",
+          "Commit generated outputs and dashboards.",
+          "Push publicly and add GitHub topics."
+        ]
+      }
+    ],
+    "todos": [
+      { "task": "Select the enterprise theme", "status": "done" },
+      { "task": "Create analytics and supplier-governance hubs", "status": "done" },
+      { "task": "Build the enterprise validator and exporter", "status": "done" },
+      { "task": "Add all direct hubs as submodules", "status": "done" },
+      { "task": "Initialize and validate nested descendants recursively", "status": "done" },
+      { "task": "Generate enterprise reports", "status": "done" },
+      { "task": "Push the repository publicly", "status": "done" },
+      { "task": "Add GitHub topics and description", "status": "done" }
+    ],
+    "deliverables": [
+      "Enterprise hub manifest",
+      "Recursive enterprise topology validator",
+      "Hub network inventory",
+      "HTML enterprise dashboard",
+      "Public enterprise-scale systems engineering repository"
+    ]
   }
 ]

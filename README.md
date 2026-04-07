@@ -38,14 +38,18 @@ If you want to grow this repository into a full portfolio, these are strong foll
 11. **MBSE Model Registry**: add an architecture-view and model-package governance layer.
 12. **Release Readiness Command Center**: track publishability, blockers, and release gates across repos.
 13. **Federated MBSE Ecosystem**: place the entire portfolio under a top-most ecosystem umbrella with layered hubs.
+14. **Portfolio Analytics Observatory**: measure portfolio health through cross-repo analytics and scorecards.
+15. **Supplier Interface Exchange**: govern supplier-facing interfaces and delivery gates.
+16. **Autonomous Disaster Response Enterprise Platform**: place the entire portfolio under a top-most enterprise umbrella with ecosystem, analytics, and supplier hubs.
 
-This repository implements Idea 1 completely and now includes a generated portfolio roadmap for thirteen ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
+This repository implements Idea 1 completely and now includes a generated portfolio roadmap for sixteen ideas. The flagship build plan lives in [docs/project_plan.md](docs/project_plan.md), while the multi-project roadmap source lives in `data/portfolio_projects.json` and exports to `reports/portfolio-roadmap.md`.
 
 The largest umbrella layers are live here:
 
 - `https://github.com/akifitu/autonomous-disaster-response-digital-thread`
 - `https://github.com/akifitu/autonomous-disaster-response-program-office`
 - `https://github.com/akifitu/federated-mbse-ecosystem`
+- `https://github.com/akifitu/autonomous-disaster-response-enterprise-platform`
 
 ## What This Repo Demonstrates
 
